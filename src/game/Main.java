@@ -1,7 +1,7 @@
 package game;
 
 import javafx.application.Application;
-import javafx.scene.layout.AnchorPane;
+import javafx.scene.input.KeyCode;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 
@@ -18,15 +18,29 @@ public class Main extends Application {
         TheVaus theVaus = new TheVaus(vausWidth, vausHeight, vausPrimaryPositionX, vausFixedPositionY);
 
         GameRoot gameRoot = new GameRoot(new Pane());
-        gameRoot.addNode(theVaus.getVaus());
+        gameRoot.addNode(theVaus.getVausObject());
         GameScene gameScene = new GameScene(gameRoot.getPane(), sceneWidth, sceneHeight);
+
+        gameScene.getScene().setOnKeyPressed(event -> {
+            {
+                if(event.getCode() == KeyCode.LEFT){
+                    theVaus.moveLeft();
+                }
+                else if(event.getCode() == KeyCode.RIGHT){
+                    theVaus.moveRight();
+                }
+                else {
+                    theVaus.moveRight();
+                }
+            }
+        });
+
+
 
         gameStage.setTitle(windowTitle);
         gameStage.setScene(gameScene.getScene());
-
-
         gameStage.show();
-        theVaus.changePosition();
+
     }
 
 

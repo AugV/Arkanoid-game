@@ -1,5 +1,9 @@
 package game;
 
+import javafx.event.EventHandler;
+import javafx.geometry.Point2D;
+import javafx.scene.input.KeyCode;
+import javafx.scene.input.KeyEvent;
 import javafx.scene.shape.Rectangle;
 
 public class TheVaus {
@@ -11,12 +15,16 @@ public class TheVaus {
         vaus.setY(fixedPositionY);
     }
 
-    public Rectangle getVaus() {
+    public Rectangle getVausObject() {
         return vaus;
     }
 
-    public void changePosition(){
+    public void moveLeft(){
         vaus.setX((vaus.getX()-100));
+    }
+
+    public void moveRight(){
+        vaus.setX((vaus.getX()+100));
     }
 
 }
