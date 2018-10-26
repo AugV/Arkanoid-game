@@ -6,7 +6,7 @@ import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
 import javafx.scene.shape.Rectangle;
 
-public class TheVaus {
+public class TheVaus implements Movable {
         private Rectangle vaus;
 
     public TheVaus(double width, double height, double primaryPositionX, double fixedPositionY) {
@@ -20,11 +20,11 @@ public class TheVaus {
     }
 
     public void moveLeft(){
-        vaus.setX((vaus.getX()-100));
+        vaus.setX((vaus.getX()-10));
     }
 
     public void moveRight(){
-        vaus.setX((vaus.getX()+100));
+        vaus.setX((vaus.getX()+10));
     }
 
 }

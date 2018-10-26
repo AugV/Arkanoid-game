@@ -2,23 +2,25 @@ package game;
 
 
 import javafx.event.EventHandler;
+import javafx.scene.Scene;
 import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
 
 
-public class UserInteraction {
-    TheVaus objectToInteract;
+public class UserInteraction <T extends Movable> {
+    Scene objectToInteract;
+    T node;
 
-    public UserInteraction(TheVaus object) {
-        objectToInteract = object;
-
-        objectToInteract.getVausObject().setOnKeyPressed(new EventHandler<KeyEvent>() {
+    public UserInteraction(Scene scene, T node) {
+        objectToInteract = scene;
+        this.node = node;
+        objectToInteract.setOnKeyPressed(new EventHandler<KeyEvent>() {
             @Override
             public void handle(KeyEvent event) {
                 if (event.getCode() == KeyCode.LEFT) {
-                    objectToInteract.moveLeft();
+                    node.moveLeft();
                 } else if (event.getCode() == KeyCode.RIGHT) {
-                    objectToInteract.moveRight();
+                    node.moveRight();
                 }
             }
         });

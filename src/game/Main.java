@@ -20,21 +20,7 @@ public class Main extends Application {
         GameRoot gameRoot = new GameRoot(new Pane());
         gameRoot.addNode(theVaus.getVausObject());
         GameScene gameScene = new GameScene(gameRoot.getPane(), sceneWidth, sceneHeight);
-
-        gameScene.getScene().setOnKeyPressed(event -> {
-            {
-                if(event.getCode() == KeyCode.LEFT){
-                    theVaus.moveLeft();
-                }
-                else if(event.getCode() == KeyCode.RIGHT){
-                    theVaus.moveRight();
-                }
-                else {
-                    theVaus.moveRight();
-                }
-            }
-        });
-
+        new UserInteraction(gameScene.getScene(), theVaus);
 
 
         gameStage.setTitle(windowTitle);
