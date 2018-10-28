@@ -1,5 +1,7 @@
 package game;
 
+import javafx.animation.Animation;
+import javafx.animation.AnimationTimer;
 import javafx.application.Application;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
@@ -20,9 +22,15 @@ public class Main extends Application {
 
         GameRoot gameRoot = new GameRoot(new Pane());
         gameRoot.addNode(theVaus.getVausObject());
+
         BrickController brickController = new BrickController(new BrickArea(sceneWidth, sceneHeight));
         brickController.fillArea();
         gameRoot.addNodes(brickController.getBrickList());
+
+        Ball ball = new Ball();
+        gameRoot.addNode(ball.getShape());
+
+        GameRules gameRules = new GameRules(ball);
 
         GameScene gameScene = new GameScene(gameRoot.getPane(), sceneWidth, sceneHeight);
         new UserInteraction(gameScene.getScene(), theVaus);
@@ -30,6 +38,13 @@ public class Main extends Application {
         gameStage.setTitle(windowTitle);
         gameStage.setScene(gameScene.getScene());
         gameStage.show();
+        AnimationTimer animationTimer = new AnimationTimer(){
+            @Override
+            public void handle(long now) {
+                gameRules.process();
+            }
+        };
+        animationTimer.start();
 
     }
 
