@@ -5,7 +5,7 @@ import java.util.ArrayList;
 public class BrickController {
     private double brickWidth, brickHeight;
     private BrickArea brickArea;
-    private ArrayList<Brick> brickList = new ArrayList<Brick>();
+    private ArrayList<Brick> brickList = new ArrayList<>();
 
     public BrickController(BrickArea area) {
         brickWidth = area.getWidth() / 5.0;
@@ -28,5 +28,6 @@ public class BrickController {
     public ArrayList<Brick> getBrickList() {
         return brickList;
     }
+
 }
 

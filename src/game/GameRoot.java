@@ -29,5 +29,7 @@ public class GameRoot<T extends Pane> {
         }
     }
 
-
+    public ObservableList getObservableList() {
+        return observableList;
+    }
 }

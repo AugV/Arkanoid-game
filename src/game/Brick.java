@@ -14,4 +14,6 @@ public class Brick {
     public Rectangle getShape() {
         return shape;
     }
+
+
 }
