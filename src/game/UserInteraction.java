@@ -9,22 +9,29 @@ import javafx.scene.input.KeyEvent;
 
 public class UserInteraction <T extends Movable> {
     Scene objectToInteract;
-    T node;
+    GameRules gameRules;
+    T shape;
 
-    public UserInteraction(Scene scene, T node) {
+    public UserInteraction(Scene scene, T shape, GameRules gameRules) {
         objectToInteract = scene;
-        this.node = node;
+        this.shape = shape;
+        this.gameRules = gameRules;
+    }
+
+    public void setKeys() {
         objectToInteract.setOnKeyPressed(new EventHandler<KeyEvent>() {
             @Override
             public void handle(KeyEvent event) {
                 if (event.getCode() == KeyCode.LEFT) {
-                    node.moveLeft();
+                    shape.moveLeft();
                 } else if (event.getCode() == KeyCode.RIGHT) {
-                    node.moveRight();
+                    shape.moveRight();
+                } else if (event.getCode() == KeyCode.SPACE) {
+                    gameRules.startTimer();
+
                 }
             }
-        });
+        });}
+
+
     }
-
-
-}

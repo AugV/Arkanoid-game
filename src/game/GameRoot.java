@@ -25,9 +25,11 @@ public class GameRoot<T extends Pane> {
 
     public void addNodes(ArrayList<Brick> nodeList){
         for(Brick brick : nodeList){
-            addNode(brick.getBrick());
+            addNode(brick.getShape());
         }
     }
 
-
+    public ObservableList getObservableList() {
+        return observableList;
+    }
 }
