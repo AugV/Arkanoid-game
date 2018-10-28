@@ -9,7 +9,8 @@ public class GameRules {
     private TheVaus vaus;
     private ArrayList<Brick> brickList;
     private GameRoot root;
-    private double directionX = 3.0, directionY = 3.0;
+    private double directionX = 5.0, directionY = 5.0;
+
     private AnimationTimer animationTimer = new AnimationTimer(){
         @Override
         public void handle(long now) {
@@ -57,12 +58,15 @@ public class GameRules {
                 > ball.getShape().getParent().getLayoutBounds().getMaxY();
     }
 
+    public Ball getBall() {
+        return ball;
+    }
 
     public void processMovement() {
         if (hitWallX()) {
             directionX = directionX * -1.0;
         } else if (hitWallY()) {
-            directionY = directionY * -1.0;
+            directionY = directionY * -1.0 ;
         } else if (contactedVaus()) {
             directionY = directionY * -1.0;
         } else if (contactedBrick()) {

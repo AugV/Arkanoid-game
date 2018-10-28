@@ -29,7 +29,6 @@ public class TheVaus implements Movable {
 
     public void moveLeft(){
         if (isAtLeftWall()){
-
         } else{
         vaus.setX((vaus.getX()-30));}
     }
