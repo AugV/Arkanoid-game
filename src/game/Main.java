@@ -20,9 +20,12 @@ public class Main extends Application {
 
         GameRoot gameRoot = new GameRoot(new Pane());
         gameRoot.addNode(theVaus.getVausObject());
+
         BrickController brickController = new BrickController(new BrickArea(sceneWidth, sceneHeight));
         brickController.fillArea();
         gameRoot.addNodes(brickController.getBrickList());
+
+
 
         GameScene gameScene = new GameScene(gameRoot.getPane(), sceneWidth, sceneHeight);
         new UserInteraction(gameScene.getScene(), theVaus);

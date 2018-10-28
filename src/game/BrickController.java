@@ -9,14 +9,14 @@ public class BrickController {
 
     public BrickController(BrickArea area) {
         brickWidth = area.getWidth() / 5.0;
-        brickHeight = area.getHeight() / 5.0;
+        brickHeight = area.getHeight() / 3.0;
         brickArea = area;
     }
 
     public void fillArea() {
         int brickId = 0;
-        for (double coordY = brickArea.getUpperY(); coordY <= brickArea.getLowerY(); ) {
-            for (double coordX = brickArea.getLeftX(); coordX <= brickArea.getRightX(); ) {
+        for (double coordY = brickArea.getUpperY(); coordY < brickArea.getLowerY()-1; ) {
+            for (double coordX = brickArea.getLeftX(); coordX < brickArea.getRightX()-1; ) {
                 brickList.add(new Brick(brickId, coordX, coordY, brickWidth, brickHeight));
                 coordX += brickWidth;
                 brickId++;
