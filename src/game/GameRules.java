@@ -1,5 +1,7 @@
 package game;
 
+import javafx.animation.AnimationTimer;
+
 import java.util.ArrayList;
 
 public class GameRules {
@@ -7,7 +9,17 @@ public class GameRules {
     private TheVaus vaus;
     private ArrayList<Brick> brickList;
     private GameRoot root;
-    private double directionX = 20.0, directionY = 20.0;
+    private double directionX = 3.0, directionY = 3.0;
+    private AnimationTimer animationTimer = new AnimationTimer(){
+        @Override
+        public void handle(long now) {
+            processMovement();
+        }
+    };
+
+    public void startTimer(){
+        animationTimer.start();
+    }
 
     public GameRules(Ball ball, TheVaus vaus, ArrayList<Brick> brickList, GameRoot gameRoot) {
         this.ball = ball;
@@ -22,8 +34,7 @@ public class GameRules {
     }
 
     public boolean hitWallY() {
-        return ball.getShape().getCenterY() - ball.getShape().getRadius() < 0
-                || ball.getShape().getCenterY() + ball.getShape().getRadius() > 764.0;
+        return ball.getShape().getCenterY() - ball.getShape().getRadius() < 0;
     }
 
     public boolean contactedVaus() {
@@ -41,6 +52,11 @@ public class GameRules {
         return false;
     }
 
+    public boolean contactedFloor(){
+        return ball.getShape().getCenterY() + ball.getShape().getRadius()
+                > ball.getShape().getParent().getLayoutBounds().getMaxY();
+    }
+
 
     public void processMovement() {
         if (hitWallX()) {
@@ -51,8 +67,10 @@ public class GameRules {
             directionY = directionY * -1.0;
         } else if (contactedBrick()) {
             directionY = directionY * -1.0;
+        } else if (contactedFloor()) {
+            System.out.println("GAME OVER!!");
+            System.exit(666);
         }
-
         ball.move(directionX, directionY);
     }
 

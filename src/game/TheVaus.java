@@ -19,12 +19,27 @@ public class TheVaus implements Movable {
         return vaus;
     }
 
+    public boolean isAtLeftWall(){
+        return vaus.getX() < 0;
+    }
+
+    public boolean isAtRightWall(){
+        return vaus.getX()+vaus.getWidth() > vaus.getParent().getLayoutBounds().getMaxX();
+    }
+
     public void moveLeft(){
-        vaus.setX((vaus.getX()-10));
+        if (isAtLeftWall()){
+
+        } else{
+        vaus.setX((vaus.getX()-30));}
     }
 
     public void moveRight(){
-        vaus.setX((vaus.getX()+10));
+        if (isAtRightWall()){
+
+        }
+        else {
+        vaus.setX((vaus.getX()+30));}
     }
 
 }

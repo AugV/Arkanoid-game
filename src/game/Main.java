@@ -37,13 +37,8 @@ public class Main extends Application {
         gameStage.setTitle(windowTitle);
         gameStage.setScene(gameScene.getScene());
         gameStage.show();
-        AnimationTimer animationTimer = new AnimationTimer(){
-            @Override
-            public void handle(long now) {
-                gameRules.processMovement();
-            }
-        };
-        animationTimer.start();
+
+        gameRules.startTimer();
 
     }
 

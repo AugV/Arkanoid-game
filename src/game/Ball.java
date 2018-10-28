@@ -6,7 +6,7 @@ public class Ball {
     private Circle shape;
 
     public Ball(){
-        shape = new Circle(900,500, 10);
+        shape = new Circle(500,300, 10);
     }
 
     public Circle getShape() {
