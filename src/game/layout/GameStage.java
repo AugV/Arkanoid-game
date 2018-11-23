@@ -1,4 +1,4 @@
-package game;
+package game.layout;
 
 import javafx.scene.Scene;
 import javafx.stage.Stage;

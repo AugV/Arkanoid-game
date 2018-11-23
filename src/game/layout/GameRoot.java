@@ -1,10 +1,11 @@
-package game;
+package game.layout;
 
+import game.objects.Brick;
 import javafx.collections.ObservableList;
 import javafx.scene.layout.Pane;
 import javafx.scene.shape.Shape;
 
-import java.util.ArrayList;
+import java.util.List;
 
 public class GameRoot<T extends Pane> {
     private T pane;
@@ -23,7 +24,7 @@ public class GameRoot<T extends Pane> {
        observableList.add(node);
     }
 
-    public void addNodes(ArrayList<Brick> nodeList){
+    public void addNodes(List<Brick> nodeList){
         for(Brick brick : nodeList){
             addNode(brick.getShape());
         }

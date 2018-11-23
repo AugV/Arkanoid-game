@@ -1,5 +1,13 @@
-package game;
+package game.main;
 
+import game.*;
+import game.engine.GameRules;
+import game.engine.UserInteraction;
+import game.layout.GameRoot;
+import game.layout.GameScene;
+import game.layout.GameStage;
+import game.objects.Ball;
+import game.objects.TheVaus;
 import javafx.application.Application;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
@@ -21,15 +29,14 @@ public class Main extends Application {
         GameRoot gameRoot = new GameRoot(new Pane());
         gameRoot.addNode(theVaus.getVausObject());
 
-        BrickController brickController = new BrickController(new BrickArea(sceneWidth, sceneHeight));
-        brickController.fillArea();
-        gameRoot.addNodes(brickController.getBrickList());
+        BrickGenerator brickGenerator = new BrickGenerator(new BrickArea(sceneWidth, sceneHeight));
+        brickGenerator.fillArea();
+        gameRoot.addNodes(brickGenerator.getBrickList());
 
         Ball ball = new Ball();
         gameRoot.addNode(ball.getShape());
 
-        GameRules gameRules = new GameRules(ball,theVaus, brickController.getBrickList(), gameRoot);
-
+        GameRules gameRules = new GameRules(ball,theVaus, brickGenerator.getBrickList(), gameRoot);
         GameScene gameScene = new GameScene(gameRoot.getPane(), sceneWidth, sceneHeight);
 
         UserInteraction userInteraction = new UserInteraction(gameScene.getScene(), theVaus, gameRules);
