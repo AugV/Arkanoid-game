@@ -1,4 +1,4 @@
-package game;
+package game.generators;
 
 public class BrickArea {
     private double lowerY, upperY, leftX, rightX, width, height;

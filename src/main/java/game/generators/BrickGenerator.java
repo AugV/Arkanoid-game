@@ -1,5 +1,6 @@
-package game;
+package game.generators;
 
+import game.generators.BrickArea;
 import game.objects.Brick;
 
 import java.util.ArrayList;
@@ -8,7 +9,7 @@ import java.util.List;
 public class BrickGenerator {
     private double brickWidth, brickHeight;
     private BrickArea brickArea;
-    private List<Brick> brickList = new ArrayList<>();
+    private List<Brick> brickList = new ArrayList();
 
     public BrickGenerator(BrickArea area) {
         brickWidth = area.getWidth() / 5.0;

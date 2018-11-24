@@ -1,8 +1,9 @@
 package game.main;
 
-import game.*;
 import game.engine.GameRules;
 import game.engine.UserInteraction;
+import game.generators.BrickArea;
+import game.generators.BrickGenerator;
 import game.layout.GameRoot;
 import game.layout.GameScene;
 import game.layout.GameStage;

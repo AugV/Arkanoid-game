@@ -26,6 +26,9 @@ public class GameRules {
         animationTimer.start();
     }
 
+    public GameRules() {
+    }
+
     public GameRules(Ball ball, TheVaus vaus, List<Brick> brickList, GameRoot gameRoot) {
         this.ball = ball;
         this.vaus = vaus;
@@ -81,7 +84,7 @@ public class GameRules {
         }
     }
 
-    private Double reverseDirection(Double direction) {
+    public Double reverseDirection(Double direction) {
         return direction = direction * -1.0;
     }
 
