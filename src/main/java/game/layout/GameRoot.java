@@ -20,8 +20,8 @@ public class GameRoot<T extends Pane> {
         return pane;
     }
 
-    public <T extends Shape>void addNode(T node){
-       observableList.add(node);
+    public <T extends Shape>void addNode(T shape){
+       observableList.add(shape);
     }
 
     public void addNodes(List<Brick> nodeList){

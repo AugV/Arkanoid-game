@@ -2,53 +2,46 @@ package game.main;
 
 import game.engine.GameRules;
 import game.engine.UserInteraction;
-import game.generators.BrickArea;
-import game.generators.BrickGenerator;
-import game.layout.GameRoot;
-import game.layout.GameScene;
-import game.layout.GameStage;
-import game.objects.Ball;
-import game.objects.TheVaus;
+import game.initializers.GameObjectInitializer;
+import game.layout.LayoutInitializer;
 import javafx.application.Application;
-import javafx.scene.layout.Pane;
+
 import javafx.stage.Stage;
 
+import static game.parameters.Parameters.windowTitle;
+
 public class Main extends Application {
-    static double sceneWidth = 1024.0, sceneHeight = 768.0;
+    public static GameObjectInitializer gameObjectInitializer;
+    static LayoutInitializer layoutInitializer;
+
+    @Override
+    public void init() {
+        gameObjectInitializer = new GameObjectInitializer();
+    }
 
     @Override
     public void start(Stage primaryStage) throws Exception {
-        GameStage gameStage = new GameStage(primaryStage);
-        //region
-        String windowTitle = "Arkanoid";
-        double vausWidth = sceneWidth / 5.0, vausHeight = sceneHeight / 38.0;
-        double vausPrimaryPositionX = ((sceneWidth-vausWidth) / 2.0) , vausFixedPositionY = sceneHeight - vausHeight;
-//endregion
+        layoutInitializer = new LayoutInitializer(primaryStage);
 
-        TheVaus theVaus = new TheVaus(vausWidth, vausHeight, vausPrimaryPositionX, vausFixedPositionY);
+//        GameStage gameStage = new GameStage(primaryStage);
+//        GameRoot gameRoot = new GameRoot(new Pane());
+//        gameRoot.addNode(theVaus.getVausObject());
+//        gameRoot.addNodes(brickGenerator.getBrickList());
+//        gameRoot.addNode(ball.getShape());
 
-        GameRoot gameRoot = new GameRoot(new Pane());
-        gameRoot.addNode(theVaus.getVausObject());
+        GameRules gameRules = new GameRules(gameObjectInitializer.getBall(),
+                gameObjectInitializer.getTheVaus(),
+                gameObjectInitializer.getBrickList(), layoutInitializer.getRoot());
+//        GameScene gameScene = new GameScene(gameRoot.getPane(), sceneWidth, sceneHeight);
 
-        BrickGenerator brickGenerator = new BrickGenerator(new BrickArea(sceneWidth, sceneHeight));
-        brickGenerator.fillArea();
-        gameRoot.addNodes(brickGenerator.getBrickList());
-
-        Ball ball = new Ball();
-        gameRoot.addNode(ball.getShape());
-
-        GameRules gameRules = new GameRules(ball,theVaus, brickGenerator.getBrickList(), gameRoot);
-        GameScene gameScene = new GameScene(gameRoot.getPane(), sceneWidth, sceneHeight);
-
-        UserInteraction userInteraction = new UserInteraction(gameScene.getScene(), theVaus, gameRules);
+        UserInteraction userInteraction = new UserInteraction(layoutInitializer.getGameScene().getScene(),
+                gameObjectInitializer.getTheVaus(), gameRules);
         userInteraction.setKeys();
 
-        gameStage.setTitle(windowTitle);
-        gameStage.setScene(gameScene.getScene());
-        gameStage.show();
-
+        layoutInitializer.getStage().setTitle(windowTitle);
+        layoutInitializer.getStage().setScene(layoutInitializer.getGameScene().getScene());
+        layoutInitializer.getStage().show();
     }
-
 
     public static void main(String[] args) {
         launch(args);

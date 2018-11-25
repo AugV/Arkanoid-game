@@ -1,4 +1,7 @@
-package game.generators;
+package game.initializers;
+
+import static game.parameters.Parameters.brickAreasLowerBorderYcoord;
+import static game.parameters.Parameters.brickAreasUpperBorderYcoord;
 
 public class BrickArea {
     private double lowerY, upperY, leftX, rightX, width, height;
@@ -12,8 +15,8 @@ public class BrickArea {
     }
 
     public BrickArea(double screenWidth, double screenHeight){
-        lowerY = screenHeight/4.0;
-        upperY = screenHeight/10.0;
+        lowerY = screenHeight/brickAreasLowerBorderYcoord;
+        upperY = screenHeight/brickAreasUpperBorderYcoord;
         leftX = 0.0;
         rightX = screenWidth;
         width = rightX - leftX;

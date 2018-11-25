@@ -8,12 +8,15 @@ import javafx.animation.AnimationTimer;
 
 import java.util.List;
 
+import static game.parameters.Parameters.ballSpeedHorizontal;
+import static game.parameters.Parameters.ballSpeedVertical;
+
 public class GameRules {
     private Ball ball;
     private TheVaus vaus;
     private List<Brick> brickList;
     private GameRoot root;
-    private double directionX = 5.0, directionY = 5.0;
+    private double ballSpeedX = ballSpeedHorizontal, ballSpeedY = ballSpeedVertical;
 
     private AnimationTimer animationTimer = new AnimationTimer() {
         @Override
@@ -46,7 +49,7 @@ public class GameRules {
     }
 
     public boolean contactedVaus() {
-        return ball.getShape().intersects(vaus.getVausObject().getLayoutBounds());
+        return ball.getShape().intersects(vaus.getShape().getLayoutBounds());
     }
 
     public boolean contactedBrick() {
@@ -71,16 +74,16 @@ public class GameRules {
 
     public void processMovement() {
         adjustInCaseOfCollision();
-        ball.move(directionX, directionY);
+        ball.move(ballSpeedX, ballSpeedY);
     }
 
     private void adjustInCaseOfCollision() {
         if (contactedFloor()) {
             gameOver();
         } else if (hitWallX()) {
-            directionX = reverseDirection(directionX);
+            ballSpeedX = reverseDirection(ballSpeedX);
         } else if (hitWallY() || contactedVaus() || contactedBrick()) {
-            directionY = reverseDirection(directionY);
+            ballSpeedY = reverseDirection(ballSpeedY);
         }
     }
 

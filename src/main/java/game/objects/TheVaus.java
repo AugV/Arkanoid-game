@@ -1,39 +1,40 @@
 package game.objects;
 
+import game.parameters.Parameters;
 import javafx.scene.shape.Rectangle;
 
 public class TheVaus implements Movable {
-    private Rectangle vaus;
+    private Rectangle shape;
 
     public TheVaus(double width, double height, double primaryPositionX, double fixedPositionY) {
-        this.vaus = new Rectangle(width, height);
-        vaus.setX(primaryPositionX);
-        vaus.setY(fixedPositionY);
+        this.shape = new Rectangle(width, height);
+        shape.setX(primaryPositionX);
+        shape.setY(fixedPositionY);
     }
 
-    public Rectangle getVausObject() {
-        return vaus;
+    public Rectangle getShape() {
+        return shape;
     }
 
     public boolean isAtLeftWall() {
-        return vaus.getX() <= 0;
+        return shape.getX() <= 0;
     }
 
     public boolean isAtRightWall() {
-        return vaus.getX() + vaus.getWidth() >= vaus.getParent().getLayoutBounds().getMaxX();
+        return shape.getX() + shape.getWidth() >= shape.getParent().getLayoutBounds().getMaxX();
     }
 
     public void moveLeft() {
         if (isAtLeftWall()) {
         } else {
-            vaus.setX((vaus.getX() - 30));
+            shape.setX((shape.getX() - Parameters.vausSpeed));
         }
     }
 
     public void moveRight() {
         if (isAtRightWall()) {
         } else {
-            vaus.setX((vaus.getX() + 30));
+            shape.setX((shape.getX() + Parameters.vausSpeed));
         }
     }
 
