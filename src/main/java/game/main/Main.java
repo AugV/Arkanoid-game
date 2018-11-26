@@ -2,7 +2,7 @@ package game.main;
 
 import game.engine.GameRules;
 import game.engine.UserInteraction;
-import game.initializers.GameObjects;
+import game.objects.GameObjects;
 import game.layout.GameLayout;
 import javafx.application.Application;
 
@@ -12,7 +12,7 @@ import static game.parameters.Parameters.windowTitle;
 
 public class Main extends Application {
     public static GameObjects gameObjects;
-    static GameLayout gameLayout;
+    public static GameLayout gameLayout;
 
     @Override
     public void init() {
@@ -23,16 +23,7 @@ public class Main extends Application {
     public void start(Stage primaryStage) throws Exception {
         gameLayout = new GameLayout(primaryStage);
 
-//        GameStage gameStage = new GameStage(primaryStage);
-//        GameRoot gameRoot = new GameRoot(new Pane());
-//        gameRoot.addNode(theVaus.getVausObject());
-//        gameRoot.addNodeList(brickGenerator.getBrickList());
-//        gameRoot.addNode(ball.getShape());
-
-        GameRules gameRules = new GameRules(gameObjects.getBall(),
-                gameObjects.getTheVaus(),
-                gameObjects.getBrickList(), gameLayout.getRoot());
-//        GameScene gameScene = new GameScene(gameRoot.getPane(), sceneWidth, sceneHeight);
+        GameRules gameRules = new GameRules();
 
         UserInteraction userInteraction = new UserInteraction(gameLayout.getGameScene().getScene(),
                 gameObjects.getTheVaus(), gameRules);

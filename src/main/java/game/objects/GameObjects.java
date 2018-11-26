@@ -1,5 +1,7 @@
-package game.initializers;
+package game.objects;
 
+import game.initializers.BrickArea;
+import game.initializers.BrickGenerator;
 import game.objects.Ball;
 import game.objects.Brick;
 import game.objects.TheVaus;
