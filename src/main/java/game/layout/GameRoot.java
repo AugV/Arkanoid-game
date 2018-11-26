@@ -20,12 +20,14 @@ public class GameRoot<T extends Pane> {
         return pane;
     }
 
-    public <T extends Shape>void addNode(T shape){
-       observableList.add(shape);
+    public <T extends Shape> void addNode(T... shapes) {
+        for (T nodeShape : shapes) {
+            observableList.add(nodeShape);
+        }
     }
 
-    public void addNodes(List<Brick> nodeList){
-        for(Brick brick : nodeList){
+    public void addNodeList(List<Brick> nodeList) {
+        for (Brick brick : nodeList) {
             addNode(brick.getShape());
         }
     }

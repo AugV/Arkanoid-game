@@ -6,18 +6,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/game/initializers/GameObjectInitializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/game/layout/LayoutInitializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/game/parameters/Parameters.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/game/engine/GameRules.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/game/engine/GameRules.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/game/generators/BrickArea.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/game/initializers/BrickArea.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/game/generators/BrickGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/game/initializers/BrickGenerator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/game/layout/GameRoot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/game/layout/GameRoot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/game/layout/LayoutInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/game/layout/LayoutInitializer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/game/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/game/main/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/game/objects/Ball.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/game/objects/Ball.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/game/objects/Brick.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/game/objects/Brick.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/game/objects/TheVaus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/game/objects/TheVaus.java" afterDir="false" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -70,40 +62,6 @@
     <ui_properties converted="true" />
     <breakpoint_rules converted="true" />
   </component>
-  <component name="FUSProjectUsageTrigger">
-    <session id="-539084166">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.closed" value="1" />
-          <entry key="project.open.time.1" value="1" />
-          <entry key="project.open.time.10" value="1" />
-          <entry key="project.opened" value="2" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="java" value="55" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="JAVA" value="55" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="dummy" value="11" />
-          <entry key="java" value="2968" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="JAVA" value="2968" />
-          <entry key="PLAIN_TEXT" value="11" />
-        </counts>
-      </usages-collector>
-    </session>
-  </component>
   <component name="FavoritesManager">
     <favorites_list name="JavaFxApplication" />
   </component>
@@ -112,24 +70,23 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/game/layout/LayoutInitializer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="52" column="55" selection-start-line="52" selection-start-column="55" selection-end-line="52" selection-end-column="55" />
+            <state relative-caret-position="356">
+              <caret line="57" lean-forward="true" selection-start-line="57" selection-end-line="57" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#384#385#0" expanded="true" />
-                <element signature="e#412#413#0" expanded="true" />
-                <element signature="e#436#437#0" expanded="true" />
-                <element signature="e#470#471#0" expanded="true" />
-                <element signature="e#305#306#0" expanded="true" />
-                <element signature="e#357#358#0" expanded="true" />
-                <element signature="e#401#402#0" expanded="true" />
-                <element signature="e#484#485#0" expanded="true" />
-                <element signature="e#495#496#0" expanded="true" />
-                <element signature="e#541#542#0" expanded="true" />
-                <element signature="e#1018#1019#0" expanded="true" />
-                <element signature="e#1046#1047#0" expanded="true" />
-                <element signature="e#1016#1017#0" expanded="true" />
-                <element signature="e#1043#1044#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/game/layout/GameRoot.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="28" column="27" selection-start-line="28" selection-start-column="27" selection-end-line="28" selection-end-column="27" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#836#837#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -157,59 +114,12 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/game/engine/GameRules.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-530">
-              <caret line="18" column="66" selection-start-line="18" selection-start-column="66" selection-end-line="18" selection-end-column="66" />
-              <folding>
-                <element signature="method#GameRules#0;class#GameRules#0" />
-                <element signature="method#contactedBrick#0;class#GameRules#0" />
-                <element signature="method#contactedFloor#0;class#GameRules#0" />
-                <element signature="method#gameOver#0;class#GameRules#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/game/initializers/GameObjectInitializer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+            <state relative-caret-position="109">
+              <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#673#674#0" expanded="true" />
-                <element signature="e#775#776#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/game/main/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-37">
-              <caret line="14" column="4" lean-forward="true" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#484#485#0" expanded="true" />
-                <element signature="e#551#552#0" expanded="true" />
-                <element signature="e#1864#1865#0" expanded="true" />
-                <element signature="e#1892#1893#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/game/initializers/BrickGenerator.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="526">
-              <caret line="38" selection-start-line="38" selection-end-line="38" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1105#1106#0" expanded="true" />
-                <element signature="e#1137#1138#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -275,7 +185,6 @@
         <option value="$PROJECT_DIR$/src/test/java/GameRulesTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/game/initializators/GameObjectInitializator.java" />
         <option value="$PROJECT_DIR$/src/main/java/game/objects/gameObject.java" />
-        <option value="$PROJECT_DIR$/src/main/java/game/layout/GameRoot.java" />
         <option value="$PROJECT_DIR$/src/main/java/game/objects/GameObject.java" />
         <option value="$PROJECT_DIR$/src/main/java/game/objects/Brick.java" />
         <option value="$PROJECT_DIR$/src/main/java/game/objects/TheVaus.java" />
@@ -286,21 +195,16 @@
         <option value="$PROJECT_DIR$/src/main/java/game/initializers/BrickGenerator.java" />
         <option value="$PROJECT_DIR$/src/main/java/game/initializers/GameObjectInitializer.java" />
         <option value="$PROJECT_DIR$/src/main/java/game/main/Main.java" />
+        <option value="$PROJECT_DIR$/src/main/java/game/layout/GameRoot.java" />
         <option value="$PROJECT_DIR$/src/main/java/game/layout/LayoutInitializer.java" />
       </list>
     </option>
   </component>
-  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsGulpfileManager">
-    <detection-done>true</detection-done>
-    <sorting>DEFINITION_ORDER</sorting>
-  </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="66" />
-    <option name="y" value="125" />
-    <option name="width" value="1843" />
+    <option name="x" value="997" />
+    <option name="y" value="184" />
+    <option name="width" value="1527" />
     <option name="height" value="878" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -430,8 +334,8 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -444,7 +348,7 @@
     <property name="OverrideImplement.combined" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543082128405" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543219882926" />
     <property name="dynamic.classpath" value="false" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -485,7 +389,7 @@
       <Host>localhost</Host>
       <Port>5050</Port>
     </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
+    <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -580,7 +484,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="TestNG" factoryName="TestNG">
+    <configuration default="true" type="TestNG">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="TEST_SEARCH_SCOPE">
         <value defaultName="moduleWithDependencies" />
@@ -591,22 +495,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType">
       <module name="" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m" />
       <option name="PROGRAM_PARAMETERS" />
-      <predefined_log_file id="idea.log" enabled="true" />
+      <predefined_log_file enabled="true" id="idea.log" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
       <item itemvalue="Application.Main" />
+      <item itemvalue="Application.TestRunner" />
       <item itemvalue="JUnit.GameRulesTest" />
       <item itemvalue="JUnit.GameRulesTest.reverseDirectionsShouldChangeNumberSign" />
       <item itemvalue="JUnit.JavaTest" />
       <item itemvalue="JUnit.JUnitTestSuite" />
-      <item itemvalue="Application.TestRunner" />
     </list>
     <recent_temporary>
       <list>
@@ -633,7 +537,8 @@
       <workItem from="1542977353894" duration="9832000" />
       <workItem from="1543073359236" duration="6231000" />
       <workItem from="1543093434381" duration="7657000" />
-      <workItem from="1543158919060" duration="12912000" />
+      <workItem from="1543158919060" duration="12974000" />
+      <workItem from="1543216117497" duration="1510000" />
     </task>
     <servers />
   </component>
@@ -664,7 +569,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37990000" />
+    <option name="totallyTimeSpent" value="39562000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -676,10 +581,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="66" y="125" width="1843" height="878" extended-state="0" />
+    <frame x="997" y="184" width="1527" height="878" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.2467751" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.30334014" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" />
       <window_info id="Designer" order="3" />
@@ -688,9 +593,9 @@
       <window_info id="UI Designer" order="6" />
       <window_info id="Capture Tool" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32795697" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32258064" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39919356" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32751676" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32080537" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3986577" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3293011" />
@@ -699,7 +604,7 @@
       <window_info anchor="bottom" id="Problems" order="9" />
       <window_info anchor="bottom" id="Changes" order="10" />
       <window_info anchor="bottom" id="Profiler" order="11" />
-      <window_info anchor="bottom" id="Event Log" order="12" weight="0.3293011" />
+      <window_info anchor="bottom" id="Event Log" order="12" weight="0.32885906" />
       <window_info anchor="bottom" id="Messages" order="13" weight="0.3252688" />
       <window_info anchor="bottom" id="Terminal" order="14" weight="0.32456142" />
       <window_info anchor="bottom" id="Database Changes" order="15" show_stripe_button="false" />
@@ -721,12 +626,27 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
-  </component>
   <component name="VcsManagerConfiguration">
     <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
     <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/game/layout/LayoutInitializer.java</url>
+          <line>17</line>
+          <properties />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/game/layout/LayoutInitializer.java</url>
+          <line>21</line>
+          <properties />
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -824,16 +744,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/game/objects/GameObject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="36" selection-start-line="6" selection-start-column="36" selection-end-line="6" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/game/objects/GameObject.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/game/engine/UserInteraction.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -876,18 +787,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/game/layout/GameRoot.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#501#502#0" expanded="true" />
-            <element signature="e#541#542#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/game/objects/Ball.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -916,9 +815,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/game/layout/GameStage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/game/initializers/BrickGenerator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="526">
+        <state relative-caret-position="423">
           <caret line="38" selection-start-line="38" selection-end-line="38" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -928,26 +834,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/game/initializers/GameObjectInitializer.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/game/main/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#673#674#0" expanded="true" />
-            <element signature="e#775#776#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="17">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/game/engine/GameRules.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-530">
-          <caret line="18" column="66" selection-start-line="18" selection-start-column="66" selection-end-line="18" selection-end-column="66" />
+        <state relative-caret-position="17">
+          <caret line="21" column="17" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
           <folding>
-            <element signature="method#GameRules#0;class#GameRules#0" />
-            <element signature="method#contactedBrick#0;class#GameRules#0" />
-            <element signature="method#contactedFloor#0;class#GameRules#0" />
             <element signature="method#gameOver#0;class#GameRules#0" />
           </folding>
         </state>
@@ -963,47 +861,33 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/game/layout/GameStage.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/game/layout/GameRoot.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        <state relative-caret-position="289">
+          <caret line="28" column="27" selection-start-line="28" selection-start-column="27" selection-end-line="28" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#836#837#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/game/main/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/game/initializers/GameObjectInitializer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-37">
-          <caret line="14" column="4" lean-forward="true" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
+        <state relative-caret-position="109">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#484#485#0" expanded="true" />
-            <element signature="e#551#552#0" expanded="true" />
-            <element signature="e#1864#1865#0" expanded="true" />
-            <element signature="e#1892#1893#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/game/layout/LayoutInitializer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="52" column="55" selection-start-line="52" selection-start-column="55" selection-end-line="52" selection-end-column="55" />
+        <state relative-caret-position="356">
+          <caret line="57" lean-forward="true" selection-start-line="57" selection-end-line="57" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#384#385#0" expanded="true" />
-            <element signature="e#412#413#0" expanded="true" />
-            <element signature="e#436#437#0" expanded="true" />
-            <element signature="e#470#471#0" expanded="true" />
-            <element signature="e#305#306#0" expanded="true" />
-            <element signature="e#357#358#0" expanded="true" />
-            <element signature="e#401#402#0" expanded="true" />
-            <element signature="e#484#485#0" expanded="true" />
-            <element signature="e#495#496#0" expanded="true" />
-            <element signature="e#541#542#0" expanded="true" />
-            <element signature="e#1018#1019#0" expanded="true" />
-            <element signature="e#1046#1047#0" expanded="true" />
-            <element signature="e#1016#1017#0" expanded="true" />
-            <element signature="e#1043#1044#0" expanded="true" />
           </folding>
         </state>
       </provider>

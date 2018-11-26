@@ -18,6 +18,7 @@ public class LayoutInitializer {
         setStage(primaryStage);
         setRoot();
         setGameObjects();
+        addNodesToRoot();
         setScene();
     }
 
@@ -26,7 +27,7 @@ public class LayoutInitializer {
     }
 
     public void setStage(Stage stage) {
-        this.stage= new GameStage(stage);
+        this.stage = new GameStage(stage);
     }
 
     public void setRoot() {
@@ -36,6 +37,7 @@ public class LayoutInitializer {
     public void setScene() {
         this.gameScene = new GameScene(root.getPane(), sceneWidth, sceneHeight);
     }
+
     public void setGameObjects() {
         this.gameObjects = Main.gameObjectInitializer;
     }
@@ -48,10 +50,8 @@ public class LayoutInitializer {
         return root;
     }
 
-    public void addNodesToRoot(){
-        root.getObservableList().addAll(gameObjects.getBall().getShape(),
-                //TODO arraylist cannot be cast to Node
-                gameObjects.getBrickShapeList(),
-                                        gameObjects.getTheVaus().getShape());
+    public void addNodesToRoot() {
+        root.addNode(gameObjects.getTheVaus().getShape(), gameObjects.getBall().getShape());
+        root.addNodeList(gameObjects.getBrickList());
     }
 }

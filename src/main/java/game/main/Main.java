@@ -26,7 +26,7 @@ public class Main extends Application {
 //        GameStage gameStage = new GameStage(primaryStage);
 //        GameRoot gameRoot = new GameRoot(new Pane());
 //        gameRoot.addNode(theVaus.getVausObject());
-//        gameRoot.addNodes(brickGenerator.getBrickList());
+//        gameRoot.addNodeList(brickGenerator.getBrickList());
 //        gameRoot.addNode(ball.getShape());
 
         GameRules gameRules = new GameRules(gameObjectInitializer.getBall(),
