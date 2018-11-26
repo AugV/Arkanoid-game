@@ -3,14 +3,10 @@ package game.engine;
 import game.layout.GameRoot;
 import game.objects.Ball;
 import game.objects.Brick;
-import game.objects.GameObjects;
 import game.objects.TheVaus;
 import javafx.animation.AnimationTimer;
 
 import java.util.List;
-
-import static game.main.Main.gameLayout;
-import static game.main.Main.gameObjects;
 import static game.parameters.Parameters.ballSpeedHorizontal;
 import static game.parameters.Parameters.ballSpeedVertical;
 
@@ -32,13 +28,15 @@ public class GameRules {
         animationTimer.start();
     }
 
-    public GameRules() {
-        this.ball = gameObjects.getBall();
-        this.vaus = gameObjects.getTheVaus();
-        this.brickList = gameObjects.getBrickList();
-        this.root = gameLayout.getRoot();
+    public GameRules(Ball ball, TheVaus vaus, List brickList, GameRoot gameRoot) {
+        this.ball = ball;
+        this.vaus = vaus;
+        this.brickList = brickList;
+        this.root = gameRoot;
     }
 
+    public GameRules() {
+    }
 
     public boolean hitWallX() {
         return ball.getShape().getCenterX() - ball.getShape().getRadius() < 0

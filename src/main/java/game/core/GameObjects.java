@@ -1,4 +1,4 @@
-package game.objects;
+package game.core;
 
 import game.initializers.BrickArea;
 import game.initializers.BrickGenerator;

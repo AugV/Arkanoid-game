@@ -1,13 +1,10 @@
 package game.engine;
 
-
-import game.engine.GameRules;
 import game.objects.Movable;
 import javafx.event.EventHandler;
 import javafx.scene.Scene;
 import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
-
 
 public class UserInteraction <T extends Movable> {
     Scene context;
@@ -18,6 +15,7 @@ public class UserInteraction <T extends Movable> {
         context = scene;
         this.manipulatedObject = manipulatedObject;
         this.rules = gameRules;
+        setKeys();
     }
 
     public void setKeys() {

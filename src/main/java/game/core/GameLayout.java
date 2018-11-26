@@ -1,12 +1,15 @@
-package game.layout;
+package game.core;
 
-import game.objects.GameObjects;
+import game.layout.GameRoot;
+import game.layout.GameScene;
+import game.layout.GameStage;
 import game.main.Main;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 
 import static game.parameters.Parameters.sceneHeight;
 import static game.parameters.Parameters.sceneWidth;
+import static game.parameters.Parameters.windowTitle;
 
 public class GameLayout {
     private GameStage stage;
@@ -15,11 +18,11 @@ public class GameLayout {
     private GameObjects gameObjects;
 
     public GameLayout(Stage primaryStage) {
-        setStage(primaryStage);
-        setRoot();
         setGameObjects();
-        addNodesToRoot();
+        setRoot();
+        addObjectsToLayout();
         setScene();
+        setStage(primaryStage);
     }
 
     public GameStage getStage() {
@@ -28,6 +31,9 @@ public class GameLayout {
 
     public void setStage(Stage stage) {
         this.stage = new GameStage(stage);
+        stage.setTitle(windowTitle);
+        stage.setScene(gameScene.getScene());
+        stage.show();
     }
 
     public void setRoot() {
@@ -50,7 +56,7 @@ public class GameLayout {
         return root;
     }
 
-    public void addNodesToRoot() {
+    public void addObjectsToLayout() {
         root.addNode(gameObjects.getTheVaus().getShape(), gameObjects.getBall().getShape());
         root.addNodeList(gameObjects.getBrickList());
     }

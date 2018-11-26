@@ -1,18 +1,16 @@
 package game.main;
 
-import game.engine.GameRules;
-import game.engine.UserInteraction;
-import game.objects.GameObjects;
-import game.layout.GameLayout;
+import game.core.GameEngine;
+import game.core.GameObjects;
+import game.core.GameLayout;
 import javafx.application.Application;
 
 import javafx.stage.Stage;
 
-import static game.parameters.Parameters.windowTitle;
-
 public class Main extends Application {
     public static GameObjects gameObjects;
     public static GameLayout gameLayout;
+    static GameEngine gameEngine;
 
     @Override
     public void init() {
@@ -22,16 +20,7 @@ public class Main extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception {
         gameLayout = new GameLayout(primaryStage);
-
-        GameRules gameRules = new GameRules();
-
-        UserInteraction userInteraction = new UserInteraction(gameLayout.getGameScene().getScene(),
-                gameObjects.getTheVaus(), gameRules);
-        userInteraction.setKeys();
-
-        gameLayout.getStage().setTitle(windowTitle);
-        gameLayout.getStage().setScene(gameLayout.getGameScene().getScene());
-        gameLayout.getStage().show();
+        gameEngine = new GameEngine(gameObjects, gameLayout);
     }
 
     public static void main(String[] args) {

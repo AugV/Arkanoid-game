@@ -14,13 +14,24 @@ public class BrickArea {
         return height;
     }
 
+    public BrickArea() {
+    }
+
     public BrickArea(double screenWidth, double screenHeight){
-        lowerY = screenHeight/brickAreasLowerBorderYcoord;
-        upperY = screenHeight/brickAreasUpperBorderYcoord;
+        lowerY = calculateLowerY(screenHeight);
+        upperY = calculateUpperY(screenHeight);
         leftX = 0.0;
         rightX = screenWidth;
         width = rightX - leftX;
         height = lowerY - upperY;
+    }
+
+    public double calculateUpperY(double screenHeight) {
+        return screenHeight/brickAreasUpperBorderYcoord;
+    }
+
+    public double calculateLowerY(double screenHeight) {
+        return screenHeight/brickAreasLowerBorderYcoord;
     }
 
     public double getLowerY() {
