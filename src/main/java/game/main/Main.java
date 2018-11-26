@@ -2,8 +2,8 @@ package game.main;
 
 import game.engine.GameRules;
 import game.engine.UserInteraction;
-import game.initializers.GameObjectInitializer;
-import game.layout.LayoutInitializer;
+import game.initializers.GameObjects;
+import game.layout.GameLayout;
 import javafx.application.Application;
 
 import javafx.stage.Stage;
@@ -11,17 +11,17 @@ import javafx.stage.Stage;
 import static game.parameters.Parameters.windowTitle;
 
 public class Main extends Application {
-    public static GameObjectInitializer gameObjectInitializer;
-    static LayoutInitializer layoutInitializer;
+    public static GameObjects gameObjects;
+    static GameLayout gameLayout;
 
     @Override
     public void init() {
-        gameObjectInitializer = new GameObjectInitializer();
+        gameObjects = new GameObjects();
     }
 
     @Override
     public void start(Stage primaryStage) throws Exception {
-        layoutInitializer = new LayoutInitializer(primaryStage);
+        gameLayout = new GameLayout(primaryStage);
 
 //        GameStage gameStage = new GameStage(primaryStage);
 //        GameRoot gameRoot = new GameRoot(new Pane());
@@ -29,18 +29,18 @@ public class Main extends Application {
 //        gameRoot.addNodeList(brickGenerator.getBrickList());
 //        gameRoot.addNode(ball.getShape());
 
-        GameRules gameRules = new GameRules(gameObjectInitializer.getBall(),
-                gameObjectInitializer.getTheVaus(),
-                gameObjectInitializer.getBrickList(), layoutInitializer.getRoot());
+        GameRules gameRules = new GameRules(gameObjects.getBall(),
+                gameObjects.getTheVaus(),
+                gameObjects.getBrickList(), gameLayout.getRoot());
 //        GameScene gameScene = new GameScene(gameRoot.getPane(), sceneWidth, sceneHeight);
 
-        UserInteraction userInteraction = new UserInteraction(layoutInitializer.getGameScene().getScene(),
-                gameObjectInitializer.getTheVaus(), gameRules);
+        UserInteraction userInteraction = new UserInteraction(gameLayout.getGameScene().getScene(),
+                gameObjects.getTheVaus(), gameRules);
         userInteraction.setKeys();
 
-        layoutInitializer.getStage().setTitle(windowTitle);
-        layoutInitializer.getStage().setScene(layoutInitializer.getGameScene().getScene());
-        layoutInitializer.getStage().show();
+        gameLayout.getStage().setTitle(windowTitle);
+        gameLayout.getStage().setScene(gameLayout.getGameScene().getScene());
+        gameLayout.getStage().show();
     }
 
     public static void main(String[] args) {

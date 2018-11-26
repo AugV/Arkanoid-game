@@ -10,24 +10,24 @@ import java.util.List;
 
 import static game.parameters.Parameters.*;
 
-public class GameObjectInitializer {
+public class GameObjects {
     private TheVaus theVaus;
     private Ball ball;
     private List<Brick> brickList;
 
-    public GameObjectInitializer() {
-        setBrickList();
-        setTheVaus();
-        setBall();
+    public GameObjects() {
+        initializeBrickList();
+        initializeTheVaus();
+        initializeBall();
     }
 
-    public void setBrickList() {
+    public void initializeBrickList() {
         BrickGenerator brickGenerator = new BrickGenerator(new BrickArea(sceneWidth, sceneHeight));
         brickGenerator.fillArea();
         brickList = brickGenerator.getBrickList();
     }
 
-    public void setTheVaus() {
+    public void initializeTheVaus() {
         theVaus = new TheVaus(vausWidth, vausHeight, vausPrimaryPositionX, vausFixedPositionY);
     }
 
@@ -51,7 +51,7 @@ public class GameObjectInitializer {
         return shapeList;
     }
 
-    public void setBall() {
+    public void initializeBall() {
         this.ball = new Ball();
     }
 

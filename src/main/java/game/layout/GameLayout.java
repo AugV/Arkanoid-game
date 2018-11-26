@@ -1,6 +1,6 @@
 package game.layout;
 
-import game.initializers.GameObjectInitializer;
+import game.initializers.GameObjects;
 import game.main.Main;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
@@ -8,13 +8,13 @@ import javafx.stage.Stage;
 import static game.parameters.Parameters.sceneHeight;
 import static game.parameters.Parameters.sceneWidth;
 
-public class LayoutInitializer {
+public class GameLayout {
     private GameStage stage;
     private GameRoot root;
     private GameScene gameScene;
-    private GameObjectInitializer gameObjects;
+    private GameObjects gameObjects;
 
-    public LayoutInitializer(Stage primaryStage) {
+    public GameLayout(Stage primaryStage) {
         setStage(primaryStage);
         setRoot();
         setGameObjects();
@@ -39,7 +39,7 @@ public class LayoutInitializer {
     }
 
     public void setGameObjects() {
-        this.gameObjects = Main.gameObjectInitializer;
+        this.gameObjects = Main.gameObjects;
     }
 
     public GameScene getGameScene() {
