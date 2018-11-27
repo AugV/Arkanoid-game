@@ -7,8 +7,8 @@ import game.objects.TheVaus;
 import javafx.animation.AnimationTimer;
 
 import java.util.List;
-import static game.parameters.Parameters.ballSpeedHorizontal;
-import static game.parameters.Parameters.ballSpeedVertical;
+
+import static game.parameters.Parameters.*;
 
 public class GameRules {
     private Ball ball;
@@ -39,8 +39,8 @@ public class GameRules {
     }
 
     public boolean hitWallX() {
-        return ball.getShape().getCenterX() - ball.getShape().getRadius() < 0
-                || ball.getShape().getCenterX() + ball.getShape().getRadius() > 1024.0;
+        return ball.getCenterX() - ball.getRadius() < 0
+                || ball.getCenterX() + ball.getRadius() > sceneWidth;
     }
 
     public boolean hitWallY() {
@@ -48,7 +48,7 @@ public class GameRules {
     }
 
     public boolean contactedVaus() {
-        return ball.getShape().intersects(vaus.getShape().getLayoutBounds());
+        return ball.intersects(vaus.getBounds());
     }
 
     public boolean contactedBrick() {
@@ -87,7 +87,7 @@ public class GameRules {
     }
 
     public Double reverseDirection(Double direction) {
-        return direction = direction * -1.0;
+        return direction *= -1.0;
     }
 
     private void gameOver() {

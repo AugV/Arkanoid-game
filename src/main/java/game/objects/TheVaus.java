@@ -1,6 +1,7 @@
 package game.objects;
 
 import game.parameters.Parameters;
+import javafx.geometry.Bounds;
 import javafx.scene.shape.Rectangle;
 
 public class TheVaus implements Movable {
@@ -29,6 +30,10 @@ public class TheVaus implements Movable {
         } else {
             shape.setX((shape.getX() - Parameters.vausSpeed));
         }
+    }
+
+    public Bounds getBounds(){
+        return shape.getLayoutBounds();
     }
 
     public void moveRight() {

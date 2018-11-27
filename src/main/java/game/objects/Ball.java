@@ -1,5 +1,6 @@
 package game.objects;
 
+import javafx.geometry.Bounds;
 import javafx.scene.shape.Circle;
 
 import static game.parameters.Parameters.ballLocX;
@@ -20,5 +21,17 @@ public class Ball {
     public void move(double X, double Y) {
         shape.setCenterX(shape.getCenterX() + X);
         shape.setCenterY(shape.getCenterY() + Y);
+    }
+
+    public double getCenterX(){
+        return shape.getCenterX();
+    }
+
+    public double getRadius(){
+        return shape.getRadius();
+    }
+
+    public boolean intersects(Bounds bounds){
+        return shape.intersects(bounds);
     }
 }
