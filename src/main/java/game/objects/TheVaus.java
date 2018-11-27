@@ -3,8 +3,9 @@ package game.objects;
 import game.parameters.Parameters;
 import javafx.geometry.Bounds;
 import javafx.scene.shape.Rectangle;
+import javafx.scene.shape.Shape;
 
-public class TheVaus implements Movable {
+public class TheVaus implements Movable, GameObject {
     private Rectangle shape;
 
     public TheVaus(double width, double height, double primaryPositionX, double fixedPositionY) {

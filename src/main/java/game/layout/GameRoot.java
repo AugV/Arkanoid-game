@@ -1,6 +1,7 @@
 package game.layout;
 
 import game.objects.Brick;
+import game.objects.GameObject;
 import javafx.collections.ObservableList;
 import javafx.scene.layout.Pane;
 import javafx.scene.shape.Shape;
@@ -26,8 +27,8 @@ public class GameRoot<T extends Pane> {
         }
     }
 
-    public void removeFromRoot(Shape shape){
-        observableList.remove(shape);
+    public void removeFromRoot(GameObject gameObject){
+        observableList.remove(gameObject.getShape());
     }
 
     public void addNodeList(List<Brick> nodeList) {

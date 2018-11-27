@@ -6,13 +6,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/game/objects/GameObject.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/game/engine/GameRules.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/game/engine/GameRules.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/game/layout/GameRoot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/game/layout/GameRoot.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/game/objects/Ball.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/game/objects/Ball.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/game/objects/Brick.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/game/objects/Brick.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/GameRulesTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/GameRulesTestMockito.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/GameRulesTestMockito.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/game/objects/TheVaus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/game/objects/TheVaus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/GameRulesTestMockito.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/GameRulesTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/TestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestRunner.java" afterDir="false" />
     </list>
     <ignored path="JavaFxApplication.iws" />
@@ -72,10 +73,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/GameRulesTestMockito.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/GameRulesTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="273">
-              <caret line="79" lean-forward="true" selection-start-line="79" selection-end-line="79" />
+            <state relative-caret-position="256">
+              <caret line="30" column="32" lean-forward="true" selection-start-line="30" selection-start-column="32" selection-end-line="30" selection-end-column="32" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -86,10 +87,12 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/game/engine/GameRules.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="188">
-              <caret line="56" column="40" lean-forward="true" selection-start-line="56" selection-start-column="40" selection-end-line="56" selection-end-column="40" />
+            <state relative-caret-position="289">
+              <caret line="41" column="40" selection-start-line="41" selection-start-column="40" selection-end-line="41" selection-end-column="40" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#586#712#0" expanded="true" />
+                <element signature="e#711#712#0" expanded="true" />
                 <element signature="e#1383#1384#0" expanded="true" />
                 <element signature="e#1467#1468#0" expanded="true" />
                 <element signature="e#2577#2578#0" expanded="true" />
@@ -100,10 +103,24 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/game/layout/GameRoot.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="30" column="52" selection-start-line="30" selection-start-column="52" selection-end-line="30" selection-end-column="52" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#649#650#0" expanded="true" />
+                <element signature="e#693#694#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/game/objects/Brick.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="11" lean-forward="true" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="20" />
+            <state relative-caret-position="51">
+              <caret line="3" column="36" selection-start-line="3" selection-start-column="36" selection-end-line="3" selection-end-column="36" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#308#309#0" expanded="true" />
@@ -116,14 +133,35 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/game/objects/GameObject.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="6" column="1" lean-forward="true" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/game/objects/TheVaus.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="35" column="39" selection-start-line="35" selection-start-column="39" selection-end-line="35" selection-end-column="39" />
+            <state relative-caret-position="238">
+              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#895#896#0" expanded="true" />
                 <element signature="e#916#917#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/game/objects/Ball.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="13" column="27" lean-forward="true" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="27" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -144,8 +182,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Singleton" />
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -196,10 +234,8 @@
         <option value="$PROJECT_DIR$/src/test/java/JUnitTestSuite.java" />
         <option value="$PROJECT_DIR$/src/test/java/TestJUnit.java" />
         <option value="$PROJECT_DIR$/src/test/java/ExampleTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/GameRulesTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/game/initializators/GameObjectInitializator.java" />
         <option value="$PROJECT_DIR$/src/main/java/game/objects/gameObject.java" />
-        <option value="$PROJECT_DIR$/src/main/java/game/objects/GameObject.java" />
         <option value="$PROJECT_DIR$/src/main/java/game/parameters/Parameters.java" />
         <option value="$PROJECT_DIR$/src/main/java/game/initializers/BrickGenerator.java" />
         <option value="$PROJECT_DIR$/src/main/java/game/initializers/GameObjectInitializer.java" />
@@ -213,12 +249,14 @@
         <option value="$PROJECT_DIR$/src/test/java/BrickAreaTest.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/java/MockitoTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/TestRunner.java" />
+        <option value="$PROJECT_DIR$/src/main/java/game/objects/GameObject.java" />
         <option value="$PROJECT_DIR$/src/main/java/game/objects/TheVaus.java" />
         <option value="$PROJECT_DIR$/src/main/java/game/objects/Ball.java" />
-        <option value="$PROJECT_DIR$/src/test/java/GameRulesTestMockito.java" />
-        <option value="$PROJECT_DIR$/src/test/java/TestRunner.java" />
-        <option value="$PROJECT_DIR$/src/main/java/game/engine/GameRules.java" />
         <option value="$PROJECT_DIR$/src/main/java/game/layout/GameRoot.java" />
+        <option value="$PROJECT_DIR$/src/main/java/game/engine/GameRules.java" />
+        <option value="$PROJECT_DIR$/src/test/java/GameRulesTestMockito.java" />
+        <option value="$PROJECT_DIR$/src/test/java/GameRulesTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/game/objects/Brick.java" />
       </list>
     </option>
@@ -474,7 +512,7 @@
     <property name="OverrideImplement.combined" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543330832978" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543332276064" />
     <property name="dynamic.classpath" value="false" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -551,10 +589,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GameRulesTestMockito.testIfBallMovementIsCalled" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="GameRulesTest" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
       <module name="Arkanoid" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="GameRulesTestMockito" />
+      <option name="MAIN_CLASS_NAME" value="GameRulesTest" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GameRulesTest.testIfBallMovementIsCalled" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Arkanoid" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="GameRulesTest" />
       <option name="METHOD_NAME" value="testIfBallMovementIsCalled" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -565,10 +615,10 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GameRulesTestMockito.testsIfBallContactedFloor" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="GameRulesTest.testsIfBallContactedFloor" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Arkanoid" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="GameRulesTestMockito" />
+      <option name="MAIN_CLASS_NAME" value="GameRulesTest" />
       <option name="METHOD_NAME" value="testsIfBallContactedFloor" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -579,25 +629,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GameRulesTestMockito.testsIfBallContactedVaus" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="GameRulesTest.testsIfBallContactedVaus" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Arkanoid" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="GameRulesTestMockito" />
+      <option name="MAIN_CLASS_NAME" value="GameRulesTest" />
       <option name="METHOD_NAME" value="testsIfBallContactedVaus" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="GameRulesTestMockito.testsIfBallContactedVerticalWalls" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Arkanoid" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="GameRulesTestMockito" />
-      <option name="METHOD_NAME" value="testsIfBallContactedVerticalWalls" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="TEST_SEARCH_SCOPE">
@@ -638,19 +674,18 @@
     </configuration>
     <list>
       <item itemvalue="Application.Main" />
-      <item itemvalue="JUnit.GameRulesTestMockito.testsIfBallContactedVaus" />
-      <item itemvalue="JUnit.GameRulesTestMockito.testsIfBallContactedVerticalWalls" />
-      <item itemvalue="JUnit.GameRulesTestMockito.testsIfBallContactedFloor" />
-      <item itemvalue="JUnit.GameRulesTestMockito.testIfBallMovementIsCalled" />
       <item itemvalue="Application.TestRunner" />
+      <item itemvalue="JUnit.GameRulesTestMockito" />
+      <item itemvalue="JUnit.GameRulesTest.testIfBallMovementIsCalled" />
+      <item itemvalue="JUnit.GameRulesTest.testsIfBallContactedFloor" />
+      <item itemvalue="JUnit.GameRulesTest.testsIfBallContactedVaus" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.GameRulesTestMockito.testIfBallMovementIsCalled" />
+        <item itemvalue="JUnit.GameRulesTest.testIfBallMovementIsCalled" />
         <item itemvalue="Application.TestRunner" />
-        <item itemvalue="JUnit.GameRulesTestMockito.testsIfBallContactedFloor" />
-        <item itemvalue="JUnit.GameRulesTestMockito.testsIfBallContactedVaus" />
-        <item itemvalue="JUnit.GameRulesTestMockito.testsIfBallContactedVerticalWalls" />
+        <item itemvalue="JUnit.GameRulesTest.testsIfBallContactedFloor" />
+        <item itemvalue="JUnit.GameRulesTest.testsIfBallContactedVaus" />
       </list>
     </recent_temporary>
   </component>
@@ -673,26 +708,11 @@
       <workItem from="1543216117497" duration="3846000" />
       <workItem from="1543249605346" duration="5808000" />
       <workItem from="1543318486300" duration="69000" />
-      <workItem from="1543320959449" duration="9422000" />
+      <workItem from="1543320959449" duration="10857000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="GameRulesTestMockito - 2018.11.27 at 16h 04m 03s.xml">
-      <configuration name="GameRulesTestMockito" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="GameRulesTestMockito - 2018.11.27 at 16h 05m 29s.xml">
-      <configuration name="GameRulesTestMockito" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="GameRulesTestMockito_testsIfBallContactedVaus - 2018.11.27 at 16h 19m 52s.xml">
-      <configuration name="GameRulesTestMockito.testsIfBallContactedVaus" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="GameRulesTestMockito_testsIfBallContactedVaus - 2018.11.27 at 16h 20m 05s.xml">
-      <configuration name="GameRulesTestMockito.testsIfBallContactedVaus" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="GameRulesTestMockito_testsIfBallContactedVerticalWalls - 2018.11.27 at 16h 24m 19s.xml">
-      <configuration name="GameRulesTestMockito.testsIfBallContactedVerticalWalls" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="GameRulesTestMockito_testsIfBallContactedVaus - 2018.11.27 at 16h 24m 47s.xml">
       <configuration name="GameRulesTestMockito.testsIfBallContactedVaus" configurationId="JUnit" />
     </history-entry>
@@ -708,9 +728,24 @@
     <history-entry file="GameRulesTestMockito_testIfBallMovementIsCalled - 2018.11.27 at 16h 55m 32s.xml">
       <configuration name="GameRulesTestMockito.testIfBallMovementIsCalled" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="GameRulesTestMockito_testIfBallMovementIsCalled - 2018.11.27 at 17h 08m 24s.xml">
+      <configuration name="GameRulesTestMockito.testIfBallMovementIsCalled" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GameRulesTestMockito_testIfBallMovementIsCalled - 2018.11.27 at 17h 08m 52s.xml">
+      <configuration name="GameRulesTestMockito.testIfBallMovementIsCalled" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GameRulesTestMockito_testIfBallMovementIsCalled - 2018.11.27 at 17h 09m 18s.xml">
+      <configuration name="GameRulesTestMockito.testIfBallMovementIsCalled" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GameRulesTestMockito - 2018.11.27 at 17h 09m 39s.xml">
+      <configuration name="GameRulesTestMockito" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GameRulesTest - 2018.11.27 at 17h 24m 19s.xml">
+      <configuration name="GameRulesTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="57197000" />
+    <option name="totallyTimeSpent" value="58632000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -826,7 +861,6 @@
     <entry file="file://$PROJECT_DIR$/src/test/java/JUnitTestSuite.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/TestJUnit.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/JavaTest.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/game/objects/GameObject.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/game/objects/Movable.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -946,35 +980,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/game/objects/Ball.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="347">
-          <caret line="29" column="4" selection-start-line="29" selection-start-column="4" selection-end-line="29" selection-end-column="4" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/game/parameters/Parameters.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="40" selection-start-line="4" selection-start-column="40" selection-end-line="4" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/game/objects/TheVaus.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="35" column="39" selection-start-line="35" selection-start-column="39" selection-end-line="35" selection-end-column="39" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#895#896#0" expanded="true" />
-            <element signature="e#916#917#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/GameRulesTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -997,30 +1002,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/GameRulesTestMockito.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="79" lean-forward="true" selection-start-line="79" selection-end-line="79" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/game/layout/GameRoot.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="29" column="37" selection-start-line="29" selection-start-column="37" selection-end-line="29" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#649#650#0" expanded="true" />
-            <element signature="e#678#679#0" expanded="true" />
-            <element signature="e#799#800#0" expanded="true" />
-            <element signature="e#836#837#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/BrickAreaTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -1028,10 +1009,46 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/game/parameters/Parameters.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="40" selection-start-line="4" selection-start-column="40" selection-end-line="4" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/game/objects/Ball.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="13" column="27" lean-forward="true" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/game/objects/TheVaus.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#895#896#0" expanded="true" />
+            <element signature="e#916#917#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/game/objects/GameObject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="1" lean-forward="true" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/game/objects/Brick.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="11" lean-forward="true" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="20" />
+        <state relative-caret-position="51">
+          <caret line="3" column="36" selection-start-line="3" selection-start-column="36" selection-end-line="3" selection-end-column="36" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#308#309#0" expanded="true" />
@@ -1042,12 +1059,36 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/game/engine/GameRules.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/GameRulesTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="56" column="40" lean-forward="true" selection-start-line="56" selection-start-column="40" selection-end-line="56" selection-end-column="40" />
+        <state relative-caret-position="256">
+          <caret line="30" column="32" lean-forward="true" selection-start-line="30" selection-start-column="32" selection-end-line="30" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/game/layout/GameRoot.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="30" column="52" selection-start-line="30" selection-start-column="52" selection-end-line="30" selection-end-column="52" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#649#650#0" expanded="true" />
+            <element signature="e#693#694#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/game/engine/GameRules.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="41" column="40" selection-start-line="41" selection-start-column="40" selection-end-line="41" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#586#712#0" expanded="true" />
+            <element signature="e#711#712#0" expanded="true" />
             <element signature="e#1383#1384#0" expanded="true" />
             <element signature="e#1467#1468#0" expanded="true" />
             <element signature="e#2577#2578#0" expanded="true" />

@@ -55,7 +55,7 @@ public class GameRules {
         for (Brick brick : brickList) {
             if (ball.intersects(brick.getBounds())) {
                 brickList.remove(brick);
-                root.getObservableList().remove(brick.getShape());
+                root.removeFromRoot(brick);
                 return true;
             }
         }

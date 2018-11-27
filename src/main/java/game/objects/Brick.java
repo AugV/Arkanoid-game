@@ -3,7 +3,7 @@ package game.objects;
 import javafx.geometry.Bounds;
 import javafx.scene.shape.Rectangle;
 
-public class Brick {
+public class Brick implements GameObject {
     private Rectangle shape;
 
     public Brick(double positionX, double positionY, double width, double height) {

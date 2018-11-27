@@ -7,7 +7,7 @@ import static game.parameters.Parameters.ballLocX;
 import static game.parameters.Parameters.ballLocY;
 import static game.parameters.Parameters.ballRadius;
 
-public class Ball {
+public class Ball implements GameObject{
     private Circle shape;
 
     public Ball() {

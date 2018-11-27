@@ -6,7 +6,6 @@ import game.objects.TheVaus;
 import javafx.geometry.Bounds;
 import org.junit.Before;
 import org.junit.Test;
-import org.mockito.stubbing.Answer;
 
 import java.util.Arrays;
 import java.util.List;
@@ -18,7 +17,7 @@ import static org.junit.Assert.*;
 import static org.mockito.Mockito.*;
 
 
-public class GameRulesTestMockito {
+public class GameRulesTest {
     private GameRules gameRules;
     private Ball ball;
     private TheVaus vaus;
