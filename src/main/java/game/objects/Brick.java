@@ -1,5 +1,6 @@
 package game.objects;
 
+import javafx.geometry.Bounds;
 import javafx.scene.shape.Rectangle;
 
 public class Brick {
@@ -11,5 +12,9 @@ public class Brick {
 
     public Rectangle getShape() {
         return shape;
+    }
+
+    public Bounds getBounds(){
+        return shape.getLayoutBounds();
     }
 }

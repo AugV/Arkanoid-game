@@ -44,7 +44,7 @@ public class GameRules {
     }
 
     public boolean hitWallY() {
-        return ball.getShape().getCenterY() - ball.getShape().getRadius() < 0;
+        return ball.getCenterY() - ball.getRadius() < 0;
     }
 
     public boolean contactedVaus() {
@@ -53,7 +53,7 @@ public class GameRules {
 
     public boolean contactedBrick() {
         for (Brick brick : brickList) {
-            if (ball.getShape().intersects(brick.getShape().getLayoutBounds())) {
+            if (ball.intersects(brick.getBounds())) {
                 brickList.remove(brick);
                 root.getObservableList().remove(brick.getShape());
                 return true;
@@ -63,8 +63,8 @@ public class GameRules {
     }
 
     public boolean contactedFloor() {
-        return ball.getShape().getCenterY() + ball.getShape().getRadius()
-                > ball.getShape().getParent().getLayoutBounds().getMaxY();
+        return ball.getCenterY() + ball.getRadius()
+                > sceneHeight;
     }
 
     public Ball getBall() {

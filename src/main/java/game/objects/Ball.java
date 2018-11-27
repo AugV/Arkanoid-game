@@ -27,6 +27,10 @@ public class Ball {
         return shape.getCenterX();
     }
 
+    public double getCenterY(){
+        return shape.getCenterY();
+    }
+
     public double getRadius(){
         return shape.getRadius();
     }

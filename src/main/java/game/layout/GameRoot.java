@@ -26,6 +26,10 @@ public class GameRoot<T extends Pane> {
         }
     }
 
+    public void removeFromRoot(Shape shape){
+        observableList.remove(shape);
+    }
+
     public void addNodeList(List<Brick> nodeList) {
         for (Brick brick : nodeList) {
             addNode(brick.getShape());

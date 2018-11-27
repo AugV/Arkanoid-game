@@ -11,10 +11,10 @@ import org.mockito.stubbing.Answer;
 import java.util.Arrays;
 import java.util.List;
 
-import static game.parameters.Parameters.sceneWidth;
-import static org.junit.Assert.assertFalse;
+import static game.parameters.Parameters.*;
+import static game.parameters.Parameters.ballSpeedVertical;
 
-import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.*;
 import static org.mockito.Mockito.*;
 
 
@@ -24,6 +24,8 @@ public class GameRulesTestMockito {
     private TheVaus vaus;
     private List<Brick> brickList;
     private GameRoot root;
+    private double ballRadius = 5.0;
+    private double ballSpeedX = ballSpeedHorizontal, ballSpeedY = ballSpeedVertical;
 
     @Before
     public void initialize() {
@@ -36,7 +38,6 @@ public class GameRulesTestMockito {
 
     @Test
     public void testsIfBallContactedVerticalWalls() {
-        double ballRadius = 5.0;
         when(ball.getCenterX()).thenReturn(sceneWidth - ballRadius);
         when(ball.getRadius()).thenReturn(ballRadius);
         assertFalse(gameRules.hitWallX());
@@ -61,5 +62,26 @@ public class GameRulesTestMockito {
 
 
     @Test
+    public void testsIfBallContactedFloor() {
+        when(ball.getCenterY()).thenReturn(sceneHeight - ballRadius);
+        when(ball.getRadius()).thenReturn(ballRadius);
+        assertFalse(gameRules.contactedFloor());
 
+        when(ball.getCenterY()).thenReturn(sceneHeight + ballRadius);
+        when(ball.getRadius()).thenReturn(ballRadius);
+        assertTrue(gameRules.contactedFloor());
+    }
+
+    @Test
+    public void testIfBallMovementIsCalled(){
+        gameRules.processMovement();
+        verify(ball).move(ballSpeedX, ballSpeedY);
+    }
+
+    @Test
+    public void reverseDirectionsShouldChangeNumberSign(){
+        assertEquals(-1.0, gameRules.reverseDirection(1.0), 0.0);
+        assertEquals(1.0, gameRules.reverseDirection(-1.0), 0.0);
+        assertEquals(0.0, gameRules.reverseDirection(0.0), 0.0);
+    }
 }
