@@ -1,0 +1,14 @@
+game\objects\TheVaus.class
+game\engine\UserInteraction$1.class
+game\engine\GameRules$1.class
+game\objects\Ball.class
+game\objects\Brick.class
+game\generators\BrickArea.class
+game\layout\GameScene.class
+game\engine\GameRules.class
+game\layout\GameRoot.class
+game\layout\GameStage.class
+game\objects\Movable.class
+game\main\Main.class
+game\generators\BrickGenerator.class
+game\engine\UserInteraction.class

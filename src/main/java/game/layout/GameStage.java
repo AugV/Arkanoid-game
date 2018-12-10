@@ -1,10 +1,10 @@
-package game;
+package game.layout;
 
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
 public class GameStage {
-    Stage gameStage;
+    private Stage gameStage;
 
     public GameStage(Stage primaryStage){
         this.gameStage= primaryStage;
