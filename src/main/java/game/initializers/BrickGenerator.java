@@ -1,7 +1,6 @@
 package game.initializers;
 
 import game.objects.Brick;
-import javafx.scene.shape.Rectangle;
 
 import java.util.ArrayList;
 import java.util.List;

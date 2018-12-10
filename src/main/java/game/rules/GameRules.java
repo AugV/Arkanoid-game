@@ -1,4 +1,4 @@
-package game.engine;
+package game.rules;
 
 import game.layout.GameRoot;
 import game.objects.Ball;
@@ -17,17 +17,6 @@ public class GameRules {
     private GameRoot root;
     private double ballSpeedX = ballSpeedHorizontal, ballSpeedY = ballSpeedVertical;
 
-    private AnimationTimer animationTimer = new AnimationTimer() {
-        @Override
-        public void handle(long now) {
-            processMovement();
-        }
-    };
-
-    public void startTimer() {
-        animationTimer.start();
-    }
-
     public GameRules(Ball ball, TheVaus vaus, List brickList, GameRoot gameRoot) {
         this.ball = ball;
         this.vaus = vaus;
@@ -35,7 +24,40 @@ public class GameRules {
         this.root = gameRoot;
     }
 
-    public GameRules() {
+    public void startTimer() {
+        animationTimer.start();
+    }
+
+    private AnimationTimer animationTimer = new AnimationTimer() {
+        @Override
+        public void handle(long now) {
+            processMovement();
+        }
+    };
+
+    public void processMovement() {
+        adjustInCaseOfCollision();
+        ball.move(ballSpeedX, ballSpeedY);
+    }
+
+    private void adjustInCaseOfCollision() {
+        if (contactedFloor()) {
+            gameOver();
+        } else if (hitWallX()) {
+            ballSpeedX = reverseDirection(ballSpeedX);
+        } else if (hitWallY() || contactedVaus() || contactedBrick()) {
+            ballSpeedY = reverseDirection(ballSpeedY);
+        }
+    }
+
+    public boolean contactedFloor() {
+        return ball.getCenterY() + ball.getRadius()
+                > sceneHeight;
+    }
+
+    private void gameOver() {
+        System.out.println("GAME OVER!!");
+        System.exit(666);
     }
 
     public boolean hitWallX() {
@@ -45,6 +67,10 @@ public class GameRules {
 
     public boolean hitWallY() {
         return ball.getCenterY() - ball.getRadius() < 0;
+    }
+
+    public Double reverseDirection(Double direction) {
+        return direction *= -1.0;
     }
 
     public boolean contactedVaus() {
@@ -62,38 +88,6 @@ public class GameRules {
         return false;
     }
 
-    public boolean contactedFloor() {
-        return ball.getCenterY() + ball.getRadius()
-                > sceneHeight;
-    }
-
-    public Ball getBall() {
-        return ball;
-    }
-
-    public void processMovement() {
-        adjustInCaseOfCollision();
-        ball.move(ballSpeedX, ballSpeedY);
-    }
-
-    private void adjustInCaseOfCollision() {
-        if (contactedFloor()) {
-            gameOver();
-        } else if (hitWallX()) {
-            ballSpeedX = reverseDirection(ballSpeedX);
-        } else if (hitWallY() || contactedVaus() || contactedBrick()) {
-            ballSpeedY = reverseDirection(ballSpeedY);
-        }
-    }
-
-    public Double reverseDirection(Double direction) {
-        return direction *= -1.0;
-    }
-
-    private void gameOver() {
-        System.out.println("GAME OVER!!");
-        System.exit(666);
-    }
 
 }
 

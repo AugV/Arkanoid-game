@@ -12,7 +12,7 @@ import static game.parameters.Parameters.sceneWidth;
 import static game.parameters.Parameters.windowTitle;
 
 public class GameLayout {
-    private GameStage stage;
+    private GameStage gameStage;
     private GameRoot root;
     private GameScene gameScene;
     private GameObjects gameObjects;
@@ -22,30 +22,31 @@ public class GameLayout {
         setRoot();
         addObjectsToLayout();
         setScene();
-        setStage(primaryStage);
+        setGameStage(primaryStage);
     }
 
-    public GameStage getStage() {
-        return stage;
-    }
-
-    public void setStage(Stage stage) {
-        this.stage = new GameStage(stage);
-        stage.setTitle(windowTitle);
-        stage.setScene(gameScene.getScene());
-        stage.show();
+    public void setGameObjects() {
+        this.gameObjects = Main.gameObjects;
     }
 
     public void setRoot() {
         this.root = new GameRoot(new Pane());
     }
 
+    public void addObjectsToLayout() {
+        root.addNode(gameObjects.getTheVaus().getShape(), gameObjects.getBall().getShape());
+        root.addNodeList(gameObjects.getBrickList());
+    }
+
     public void setScene() {
         this.gameScene = new GameScene(root.getPane(), sceneWidth, sceneHeight);
     }
 
-    public void setGameObjects() {
-        this.gameObjects = Main.gameObjects;
+    public void setGameStage(Stage stage) {
+        gameStage = new GameStage(stage);
+        gameStage.setTitle(windowTitle);
+        gameStage.setScene(gameScene.getScene());
+        gameStage.show();
     }
 
     public GameScene getGameScene() {
@@ -54,10 +55,5 @@ public class GameLayout {
 
     public GameRoot getRoot() {
         return root;
-    }
-
-    public void addObjectsToLayout() {
-        root.addNode(gameObjects.getTheVaus().getShape(), gameObjects.getBall().getShape());
-        root.addNodeList(gameObjects.getBrickList());
     }
 }

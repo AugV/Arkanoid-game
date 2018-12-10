@@ -1,9 +1,8 @@
-import game.engine.GameRules;
+import game.rules.GameRules;
 import game.layout.GameRoot;
 import game.objects.Ball;
 import game.objects.Brick;
 import game.objects.TheVaus;
-import javafx.geometry.Bounds;
 import org.junit.Before;
 import org.junit.Test;
 
