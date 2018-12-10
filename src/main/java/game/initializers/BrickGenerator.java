@@ -3,6 +3,7 @@ package game.initializers;
 import game.objects.Brick;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 import static game.parameters.Parameters.brickColumnCount;
@@ -18,7 +19,8 @@ public class BrickGenerator {
         brickHeight = area.getHeight() / brickRowCount;
         brickArea = area;
     }
-
+//todo pakeisti i factory methoda
+    //todo igyvendinti behavioral paterna
     public void fillArea() {
         int brickId = 0;
         for (double coordY = brickArea.getUpperY(); coordY < brickArea.getLowerY() - 1; ) {

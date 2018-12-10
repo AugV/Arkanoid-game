@@ -6,19 +6,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/game/core/GameEngine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/game/core/GameEngine.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/game/core/GameLayout.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/game/core/GameLayout.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/game/engine/GameRules.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/game/rules/GameRules.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/game/engine/UserInteraction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/game/user/UserInteraction.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/game/initializers/BrickGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/game/initializers/BrickGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/game/layout/GameRoot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/game/layout/GameRoot.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/game/layout/GameScene.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/game/layout/GameScene.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/game/layout/GameStage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/game/layout/GameStage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/game/objects/GameObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/game/objects/GameObject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/game/objects/Movable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/game/objects/Movable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/game/objects/TheVaus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/game/objects/TheVaus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/GameRulesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/GameRulesTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/game/parameters/Parameters.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/game/parameters/Parameters.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestRunner.java" afterDir="false" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -88,11 +78,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/game/rules/GameRules.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="24" lean-forward="true" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
+            <state relative-caret-position="357">
+              <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#GameRules#0;class#GameRules#0" />
@@ -108,10 +98,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/game/user/UserInteraction.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/game/initializers/BrickArea.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+            <state relative-caret-position="332">
+              <caret line="39" selection-start-line="39" selection-end-line="39" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -120,31 +110,36 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/game/objects/GameObject.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/game/initializers/BrickGenerator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/game/objects/Movable.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="20" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/game/objects/TheVaus.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+            <state relative-caret-position="388">
+              <caret line="37" column="5" selection-start-line="37" selection-start-column="5" selection-end-line="37" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="method#moveRight#0;class#TheVaus#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/game/layout/GameRoot.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="33" column="33" lean-forward="true" selection-start-line="33" selection-start-column="33" selection-end-line="33" selection-end-column="33" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/game/layout/GameScene.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="6" column="22" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -153,7 +148,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/game/objects/Ball.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
+            <state relative-caret-position="134">
               <caret line="13" column="27" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -162,17 +157,17 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/game/parameters/Parameters.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="40" selection-start-line="4" selection-start-column="40" selection-end-line="4" selection-end-column="40" />
+            <state relative-caret-position="51">
+              <caret line="3" column="26" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/game/core/GameEngine.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/game/layout/GameStage.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="68">
               <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
@@ -181,10 +176,13 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/game/layout/GameStage.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/game/main/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+            <state relative-caret-position="338">
+              <caret line="22" column="32" selection-start-line="22" selection-start-column="32" selection-end-line="22" selection-end-column="32" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -221,7 +219,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/game/Movable.java" />
         <option value="$PROJECT_DIR$/src/game/Tiles.java" />
         <option value="$PROJECT_DIR$/src/game/BrickArea.java" />
         <option value="$PROJECT_DIR$/src/game/BrickGeneretor.java" />
@@ -245,7 +242,6 @@
         <option value="$PROJECT_DIR$/src/test/java/ExampleTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/game/initializators/GameObjectInitializator.java" />
         <option value="$PROJECT_DIR$/src/main/java/game/objects/gameObject.java" />
-        <option value="$PROJECT_DIR$/src/main/java/game/parameters/Parameters.java" />
         <option value="$PROJECT_DIR$/src/main/java/game/initializers/GameObjectInitializer.java" />
         <option value="$PROJECT_DIR$/src/main/java/game/initializers/GameObjects.java" />
         <option value="$PROJECT_DIR$/src/main/java/game/layout/LayoutInitializer.java" />
@@ -256,7 +252,6 @@
         <option value="$PROJECT_DIR$/src/test/java/BrickAreaTest.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/java/MockitoTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/TestRunner.java" />
         <option value="$PROJECT_DIR$/src/main/java/game/objects/Ball.java" />
         <option value="$PROJECT_DIR$/src/test/java/GameRulesTestMockito.java" />
         <option value="$PROJECT_DIR$/src/test/java/GameRulesTest.java" />
@@ -267,20 +262,23 @@
         <option value="$PROJECT_DIR$/src/main/java/game/objects/Movable.java" />
         <option value="$PROJECT_DIR$/src/main/java/game/objects/GameObject.java" />
         <option value="$PROJECT_DIR$/src/main/java/game/objects/TheVaus.java" />
-        <option value="$PROJECT_DIR$/src/main/java/game/initializers/BrickGenerator.java" />
         <option value="$PROJECT_DIR$/src/main/java/game/layout/GameRoot.java" />
         <option value="$PROJECT_DIR$/src/main/java/game/layout/GameScene.java" />
         <option value="$PROJECT_DIR$/src/main/java/game/layout/GameStage.java" />
         <option value="$PROJECT_DIR$/src/main/java/game/core/GameLayout.java" />
+        <option value="$PROJECT_DIR$/src/test/java/TestRunner.java" />
+        <option value="$PROJECT_DIR$/src/main/java/game/rules/GameRules.java" />
+        <option value="$PROJECT_DIR$/src/main/java/game/initializers/BrickGenerator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/game/parameters/Parameters.java" />
       </list>
     </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
-  <component name="ProjectFrameBounds">
-    <option name="x" value="710" />
-    <option name="y" value="268" />
-    <option name="width" value="1527" />
-    <option name="height" value="878" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="145" />
+    <option name="y" value="52" />
+    <option name="width" value="1528" />
+    <option name="height" value="879" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectReloadState">
@@ -418,10 +416,14 @@
               <item name="Arkanoid" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
               <item name="Arkanoid" type="2674bda8:ScopeViewTreeModel$GroupNode" />
               <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="test" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="Arkanoid" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="Arkanoid" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="test" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="game" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="user" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
           </expand>
           <select />
@@ -558,7 +560,7 @@
     <property name="OverrideImplement.combined" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544433220126" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544464585074" />
     <property name="dynamic.classpath" value="false" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -586,7 +588,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="JUnit.BrickAreaTest">
     <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
       <option name="VMOptions" />
       <option name="arguments" />
@@ -631,6 +633,18 @@
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BrickAreaTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Arkanoid" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="BrickAreaTest" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -725,11 +739,13 @@
       <item itemvalue="JUnit.GameRulesTest.testIfBallMovementIsCalled" />
       <item itemvalue="JUnit.GameRulesTest.testsIfBallContactedFloor" />
       <item itemvalue="JUnit.GameRulesTest.testsIfBallContactedVaus" />
+      <item itemvalue="JUnit.BrickAreaTest" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.GameRulesTest.testIfBallMovementIsCalled" />
+        <item itemvalue="JUnit.BrickAreaTest" />
         <item itemvalue="Application.TestRunner" />
+        <item itemvalue="JUnit.GameRulesTest.testIfBallMovementIsCalled" />
         <item itemvalue="JUnit.GameRulesTest.testsIfBallContactedFloor" />
         <item itemvalue="JUnit.GameRulesTest.testsIfBallContactedVaus" />
       </list>
@@ -757,22 +773,11 @@
       <workItem from="1543320959449" duration="13351000" />
       <workItem from="1543391794080" duration="750000" />
       <workItem from="1544431506381" duration="1712000" />
+      <workItem from="1544462636559" duration="1930000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="GameRulesTestMockito_testsIfBallContactedFloor - 2018.11.27 at 16h 36m 09s.xml">
-      <configuration name="GameRulesTestMockito.testsIfBallContactedFloor" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="GameRulesTestMockito_testsIfBallContactedFloor - 2018.11.27 at 16h 37m 51s.xml">
-      <configuration name="GameRulesTestMockito.testsIfBallContactedFloor" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="GameRulesTestMockito_testIfBallMovementIsCalled - 2018.11.27 at 16h 42m 11s.xml">
-      <configuration name="GameRulesTestMockito.testIfBallMovementIsCalled" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="GameRulesTestMockito_testIfBallMovementIsCalled - 2018.11.27 at 16h 55m 32s.xml">
-      <configuration name="GameRulesTestMockito.testIfBallMovementIsCalled" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="GameRulesTestMockito_testIfBallMovementIsCalled - 2018.11.27 at 17h 08m 24s.xml">
       <configuration name="GameRulesTestMockito.testIfBallMovementIsCalled" configurationId="JUnit" />
     </history-entry>
@@ -791,9 +796,21 @@
     <history-entry file="GameRulesTest - 2018.11.28 at 10h 10m 02s.xml">
       <configuration name="GameRulesTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="GameRulesTest - 2018.12.10 at 19h 24m 48s.xml">
+      <configuration name="GameRulesTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BrickAreaTest - 2018.12.10 at 19h 29m 57s.xml">
+      <configuration name="BrickAreaTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GameRulesTest - 2018.12.10 at 19h 39m 08s.xml">
+      <configuration name="GameRulesTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BrickAreaTest - 2018.12.10 at 19h 39m 25s.xml">
+      <configuration name="BrickAreaTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="63588000" />
+    <option name="totallyTimeSpent" value="65518000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -805,10 +822,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="710" y="268" width="1527" height="878" extended-state="0" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.3244717" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.25771812" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" />
       <window_info id="Designer" order="3" />
@@ -816,20 +833,20 @@
       <window_info id="Image Layers" order="5" />
       <window_info id="UI Designer" order="6" />
       <window_info id="Capture Tool" order="7" />
-      <window_info anchor="bottom" id="Statistic" order="0" />
+      <window_info anchor="bottom" id="Statistic" order="0" weight="0.32924694" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" weight="0.32751676" />
-      <window_info anchor="bottom" id="Run" order="3" visible="true" weight="0.3181208" />
+      <window_info anchor="bottom" id="Run" order="3" visible="true" weight="0.22096318" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.3986577" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="7" weight="0.3293011" />
+      <window_info anchor="bottom" id="TODO" order="7" weight="0.32924694" />
       <window_info anchor="bottom" id="Application Servers" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Problems" order="10" />
       <window_info anchor="bottom" id="Changes" order="11" />
       <window_info anchor="bottom" id="Profiler" order="12" />
-      <window_info anchor="bottom" id="Event Log" order="13" weight="0.32885906" />
+      <window_info anchor="bottom" id="Event Log" order="13" weight="0.32749563" />
       <window_info anchor="bottom" id="Messages" order="14" weight="0.32348993" />
       <window_info anchor="bottom" id="Terminal" order="15" weight="0.32456142" />
       <window_info anchor="bottom" id="Database Changes" order="16" show_stripe_button="false" />
@@ -931,10 +948,41 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/javafx-src.zip!/javafx/stage/Stage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="257" column="32" selection-start-line="257" selection-start-column="32" selection-end-line="257" selection-end-column="32" />
+          <folding>
+            <element signature="e#8302#8303#0" expanded="true" />
+            <element signature="e#8330#8331#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/game/core/GameLayout.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="44" column="43" lean-forward="true" selection-start-line="44" selection-start-column="43" selection-end-line="44" selection-end-column="43" />
+          <folding>
+            <element signature="method#addObjectsToLayout#0;class#GameLayout#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/TestRunner.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="65" selection-start-line="7" selection-start-column="65" selection-end-line="7" selection-end-column="65" />
+        <state relative-caret-position="238">
+          <caret line="14" column="1" lean-forward="true" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/GameRulesTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="52" column="44" lean-forward="true" selection-start-line="30" selection-start-column="32" selection-end-line="52" selection-end-column="44" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -943,25 +991,69 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/BrickAreaTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        <state relative-caret-position="170">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/GameRulesTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/game/objects/GameObject.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="30" column="32" selection-start-line="30" selection-start-column="32" selection-end-line="30" selection-end-column="32" />
+        <state relative-caret-position="68">
+          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/game/objects/TheVaus.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#moveRight#0;class#TheVaus#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/game/objects/Movable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/game/user/UserInteraction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="83">
+          <caret line="9" column="43" selection-start-line="9" selection-start-column="43" selection-end-line="9" selection-end-column="43" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/game/main/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/game/core/GameEngine.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="22" column="32" selection-start-line="22" selection-start-column="32" selection-end-line="22" selection-end-column="32" />
+        <state relative-caret-position="93">
+          <caret line="8" column="28" lean-forward="true" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/game/core/GameObjects.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="318">
+          <caret line="47" column="26" lean-forward="true" selection-start-line="47" selection-start-column="26" selection-end-line="47" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#955#956#0" expanded="true" />
+            <element signature="e#985#986#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/game/initializers/BrickArea.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="332">
+          <caret line="39" selection-start-line="39" selection-end-line="39" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -970,19 +1062,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/game/initializers/BrickGenerator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-119">
-          <caret line="2" column="26" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
+        <state relative-caret-position="388">
+          <caret line="37" column="5" selection-start-line="37" selection-start-column="5" selection-end-line="37" selection-end-column="5" />
           <folding>
-            <element signature="e#1105#1106#0" expanded="true" />
-            <element signature="e#1137#1138#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/game/layout/GameRoot.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="38" selection-start-line="38" selection-end-line="38" />
+        <state relative-caret-position="357">
+          <caret line="33" column="33" lean-forward="true" selection-start-line="33" selection-start-column="33" selection-end-line="33" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -999,66 +1090,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/game/initializers/BrickArea.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="39" selection-start-line="39" selection-end-line="39" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/javafx-src.zip!/javafx/stage/Stage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="257" column="32" selection-start-line="257" selection-start-column="32" selection-end-line="257" selection-end-column="32" />
-          <folding>
-            <element signature="e#8302#8303#0" expanded="true" />
-            <element signature="e#8330#8331#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/game/core/GameObjects.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="545">
-          <caret line="35" column="27" lean-forward="true" selection-start-line="35" selection-start-column="27" selection-end-line="35" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#955#956#0" expanded="true" />
-            <element signature="e#985#986#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/game/core/GameLayout.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="44" column="43" lean-forward="true" selection-start-line="44" selection-start-column="43" selection-end-line="44" selection-end-column="43" />
-          <folding>
-            <element signature="method#addObjectsToLayout#0;class#GameLayout#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/game/core/GameEngine.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/game/layout/GameStage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/game/layout/GameStage.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/game/main/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+        <state relative-caret-position="338">
+          <caret line="22" column="32" selection-start-line="22" selection-start-column="32" selection-end-line="22" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/game/objects/Ball.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
+        <state relative-caret-position="134">
           <caret line="13" column="27" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1076,52 +1127,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/game/objects/GameObject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/game/objects/Movable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="20" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/game/objects/TheVaus.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#moveRight#0;class#TheVaus#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/game/parameters/Parameters.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="40" selection-start-line="4" selection-start-column="40" selection-end-line="4" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/game/user/UserInteraction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/game/rules/GameRules.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="24" lean-forward="true" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
+        <state relative-caret-position="357">
+          <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#GameRules#0;class#GameRules#0" />
@@ -1132,6 +1141,13 @@
             <element signature="method#hitWallX#0;class#GameRules#0" />
             <element signature="method#contactedBrick#0;class#GameRules#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/game/parameters/Parameters.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="26" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
         </state>
       </provider>
     </entry>

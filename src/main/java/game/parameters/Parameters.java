@@ -1,6 +1,7 @@
 package game.parameters;
 
 public class Parameters {
+    //todo  padaryti sita singleton
     public static final String windowTitle = "Arkanoid";
     public static final double sceneWidth = 1024.0, sceneHeight = 768.0;
     public static final double vausWidth = sceneWidth / 5.0, vausHeight = sceneHeight / 38.0;
