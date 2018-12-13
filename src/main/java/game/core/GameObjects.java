@@ -5,6 +5,7 @@ import game.initializers.BrickGenerator;
 import game.objects.Ball;
 import game.objects.Brick;
 import game.objects.TheVaus;
+import game.parameters.Parameters;
 import javafx.scene.shape.Rectangle;
 
 import java.util.ArrayList;
@@ -24,13 +25,17 @@ public class GameObjects {
     }
 
     public void initializeBrickList() {
-        BrickGenerator brickGenerator = new BrickGenerator(new BrickArea(sceneWidth, sceneHeight));
+        BrickGenerator brickGenerator = new BrickGenerator(new BrickArea(Parameters.getInstance().getSceneWidth(),
+                                                                Parameters.getInstance().getSceneHeight()));
         brickGenerator.fillArea();
         brickList = brickGenerator.getBrickList();
     }
 
     public void initializeTheVaus() {
-        theVaus = new TheVaus(vausWidth, vausHeight, vausPrimaryPositionX, vausFixedPositionY);
+        theVaus = new TheVaus(Parameters.getInstance().getVausWidth(),
+                Parameters.getInstance().getVausHeight(),
+                Parameters.getInstance().getVausPrimaryPositionX(),
+                Parameters.getInstance().getVausFixedPositionY());
     }
 
     public TheVaus getTheVaus() {

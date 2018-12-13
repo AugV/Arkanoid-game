@@ -1,3 +1,4 @@
+import game.parameters.Parameters;
 import game.rules.GameRules;
 import game.layout.GameRoot;
 import game.objects.Ball;
@@ -9,8 +10,6 @@ import org.junit.Test;
 import java.util.Arrays;
 import java.util.List;
 
-import static game.parameters.Parameters.*;
-import static game.parameters.Parameters.ballSpeedVertical;
 
 import static org.junit.Assert.*;
 import static org.mockito.Mockito.*;
@@ -23,7 +22,8 @@ public class GameRulesTest {
     private List<Brick> brickList;
     private GameRoot root;
     private double ballRadius = 5.0;
-    private double ballSpeedX = ballSpeedHorizontal, ballSpeedY = ballSpeedVertical;
+    private double ballSpeedX = Parameters.getInstance().getBallSpeedHorizontal(),
+                    ballSpeedY = Parameters.getInstance().getBallSpeedVertical();
 
     @Before
     public void initialize() {
@@ -36,7 +36,7 @@ public class GameRulesTest {
 
     @Test
     public void testsIfBallContactedVerticalWalls() {
-        when(ball.getCenterX()).thenReturn(sceneWidth - ballRadius);
+        when(ball.getCenterX()).thenReturn(Parameters.getInstance().getSceneWidth() - ballRadius);
         when(ball.getRadius()).thenReturn(ballRadius);
         assertFalse(gameRules.hitWallX());
 
@@ -44,7 +44,7 @@ public class GameRulesTest {
         when(ball.getRadius()).thenReturn(ballRadius);
         assertFalse(gameRules.hitWallX());
 
-        when(ball.getCenterX()).thenReturn(sceneWidth + 1);
+        when(ball.getCenterX()).thenReturn(Parameters.getInstance().getSceneWidth() + 1);
         when(ball.getRadius()).thenReturn(ballRadius);
         assertTrue(gameRules.hitWallX());
     }
@@ -61,11 +61,11 @@ public class GameRulesTest {
 
     @Test
     public void testsIfBallContactedFloor() {
-        when(ball.getCenterY()).thenReturn(sceneHeight - ballRadius);
+        when(ball.getCenterY()).thenReturn(Parameters.getInstance().getSceneHeight() - ballRadius);
         when(ball.getRadius()).thenReturn(ballRadius);
         assertFalse(gameRules.contactedFloor());
 
-        when(ball.getCenterY()).thenReturn(sceneHeight + ballRadius);
+        when(ball.getCenterY()).thenReturn(Parameters.getInstance().getSceneHeight()+ ballRadius);
         when(ball.getRadius()).thenReturn(ballRadius);
         assertTrue(gameRules.contactedFloor());
     }

@@ -1,13 +1,10 @@
 package game.initializers;
 
 import game.objects.Brick;
+import game.parameters.Parameters;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
-
-import static game.parameters.Parameters.brickColumnCount;
-import static game.parameters.Parameters.brickRowCount;
 
 public class BrickGenerator {
     private double brickWidth, brickHeight;
@@ -15,8 +12,8 @@ public class BrickGenerator {
     private List<Brick> brickList = new ArrayList();
 
     public BrickGenerator(BrickArea area) {
-        brickWidth = area.getWidth() / brickColumnCount;
-        brickHeight = area.getHeight() / brickRowCount;
+        brickWidth = area.getWidth() / Parameters.getInstance().getBrickColumnCount();
+        brickHeight = area.getHeight() / Parameters.getInstance().getBrickRowCount();
         brickArea = area;
     }
 //todo pakeisti i factory methoda
