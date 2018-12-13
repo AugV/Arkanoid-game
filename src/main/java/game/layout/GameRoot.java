@@ -31,9 +31,9 @@ public class GameRoot<T extends Pane> {
         observableList.remove(gameObject.getShape());
     }
 
-    public void addNodeList(List<Brick> nodeList) {
-        for (Brick brick : nodeList) {
-            addNode(brick.getShape());
+    public void addNodeList(List<GameObject> nodeList) {
+        for (GameObject obj : nodeList) {
+            addNode(obj.getShape());
         }
     }
 

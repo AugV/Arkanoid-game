@@ -37,4 +37,9 @@ public class Ball implements GameObject{
     public boolean intersects(Bounds bounds){
         return shape.intersects(bounds);
     }
+
+    @Override
+    public Bounds getBounds() {
+        return shape.getLayoutBounds();
+    }
 }

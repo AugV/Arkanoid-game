@@ -1,22 +1,21 @@
 package game.core;
 
 import game.initializers.BrickArea;
-import game.initializers.BrickGenerator;
+import game.initializers.BrickFactory;
 import game.objects.Ball;
-import game.objects.Brick;
+import game.objects.GameObject;
 import game.objects.TheVaus;
 import game.parameters.Parameters;
-import javafx.scene.shape.Rectangle;
+import javafx.scene.shape.Shape;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import static game.parameters.Parameters.*;
 
 public class GameObjects {
     private TheVaus theVaus;
     private Ball ball;
-    private List<Brick> brickList;
+    private List<GameObject> brickList;
 
     public GameObjects() {
         initializeBrickList();
@@ -25,10 +24,10 @@ public class GameObjects {
     }
 
     public void initializeBrickList() {
-        BrickGenerator brickGenerator = new BrickGenerator(new BrickArea(Parameters.getInstance().getSceneWidth(),
+        BrickFactory brickFactory = new BrickFactory(new BrickArea(Parameters.getInstance().getSceneWidth(),
                                                                 Parameters.getInstance().getSceneHeight()));
-        brickGenerator.fillArea();
-        brickList = brickGenerator.getBrickList();
+        brickFactory.fillArea();
+        brickList = brickFactory.getBrickList();
     }
 
     public void initializeTheVaus() {
@@ -46,14 +45,14 @@ public class GameObjects {
         return ball;
     }
 
-    public List<Brick> getBrickList() {
+    public List<GameObject> getBrickList() {
         return brickList;
     }
 
     public List getBrickShapeList() {
-        List<Rectangle> shapeList = new ArrayList();
-        for(Brick brick: brickList){
-            shapeList.add(brick.getShape());
+        List<Shape> shapeList = new ArrayList();
+        for(GameObject obj: brickList){
+            shapeList.add(obj.getShape());
         }
         return shapeList;
     }

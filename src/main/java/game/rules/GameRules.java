@@ -3,6 +3,7 @@ package game.rules;
 import game.layout.GameRoot;
 import game.objects.Ball;
 import game.objects.Brick;
+import game.objects.GameObject;
 import game.objects.TheVaus;
 import game.parameters.Parameters;
 import javafx.animation.AnimationTimer;
@@ -74,14 +75,14 @@ public class GameRules {
     }
 
     public boolean contactedVaus() {
-        return ball.intersects(vaus.getBounds());
+        return ball.intersects((vaus.getShape().getLayoutBounds()));
     }
 
     public boolean contactedBrick() {
-        for (Brick brick : brickList) {
-            if (ball.intersects(brick.getBounds())) {
-                brickList.remove(brick);
-                root.removeFromRoot(brick);
+        for (GameObject obj : brickList) {
+            if (ball.intersects(obj.getBounds())) {
+                brickList.remove(obj);
+                root.removeFromRoot(obj);
                 return true;
             }
         }
