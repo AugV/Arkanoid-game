@@ -1,5 +1,7 @@
 package game.parameters;
 
+import game.objects.BrickType;
+
 public class Parameters {
 
     private static final Parameters parameters = new Parameters();
@@ -18,9 +20,13 @@ public class Parameters {
     private final int ballLocY = 300;
     private final int ballRadius = 10;
     private final int vausSpeed = 30;
-
+    private final BrickType brickType = BrickType.BRICK;
 
     private Parameters() {
+    }
+
+    public BrickType getBrickType() {
+        return brickType;
     }
 
     public static Parameters getInstance() {

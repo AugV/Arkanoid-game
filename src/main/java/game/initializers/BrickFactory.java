@@ -1,6 +1,7 @@
 package game.initializers;
 
 import game.objects.Brick;
+import game.objects.BrickType;
 import game.objects.GameObject;
 import game.objects.Sphere;
 import game.parameters.Parameters;
@@ -18,34 +19,44 @@ public class BrickFactory {
         objectHeight = area.getHeight() / Parameters.getInstance().getBrickRowCount();
         brickArea = area;
     }
-//todo pakeisti i factory methoda
+    
     //todo igyvendinti behavioral paterna
     public void fillArea() {
-        int brickId = 0;
         for (double coordY = brickArea.getUpperY(); coordY < brickArea.getLowerY() - 1; ) {
             for (double coordX = brickArea.getLeftX(); coordX < brickArea.getRightX() - 1; ) {
-//                brickList.add(getNewSphere(coordX, coordY, objectHeight));
-                brickList.add(getNewBrick(coordX, coordY, objectWidth, objectHeight));
+                addGameObjectToList(coordX, coordY, objectWidth, objectHeight);
                 coordX += objectWidth;
-                brickId++;
             }
             coordY += objectHeight;
         }
     }
 
-    private GameObject getNewBrick(double coordX, double coordY, double brickWidth, double brickHeight ){
+    private void addGameObjectToList(double coordX, double coordY, double objectWidth, double objectHeight) {
+        GameObject newGameObject;
+        switch (Parameters.getInstance().getBrickType()) {
+            case BRICK:
+                newGameObject = getNewBrick(coordX, coordY, objectWidth, objectHeight);
+                break;
+            case SPHERE:
+                newGameObject = getNewSphere(coordX, coordY, objectHeight);
+                break;
+            default:
+                throw new NullPointerException();
+        }
+        brickList.add(newGameObject);
+    }
+
+    private GameObject getNewBrick(double coordX, double coordY, double brickWidth, double brickHeight) {
         return new Brick(coordX, coordY, brickWidth, brickHeight);
     }
 
-    private GameObject getNewSphere(double coordX, double coordY, double radius ){
+    private GameObject getNewSphere(double coordX, double coordY, double radius) {
         return new Sphere(coordX, coordY, radius);
     }
-
 
     public List<GameObject> getBrickList() {
         return brickList;
     }
-
 
 
 }
