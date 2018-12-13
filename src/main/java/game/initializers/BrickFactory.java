@@ -1,7 +1,6 @@
 package game.initializers;
 
 import game.objects.Brick;
-import game.objects.BrickType;
 import game.objects.GameObject;
 import game.objects.Sphere;
 import game.parameters.Parameters;
@@ -14,13 +13,22 @@ public class BrickFactory {
     private BrickArea brickArea;
     private List<GameObject> brickList = new ArrayList();
 
-    public BrickFactory(BrickArea area) {
-        objectWidth = area.getWidth() / Parameters.getInstance().getBrickColumnCount();
-        objectHeight = area.getHeight() / Parameters.getInstance().getBrickRowCount();
-        brickArea = area;
+    public BrickFactory() {
+        brickArea = new BrickAreaFromParameters(Parameters.getInstance().getSceneWidth(),
+                Parameters.getInstance().getSceneHeight());
+        calculateObjectWidth();
+        calculateObjectHeight();
     }
-    
-    //todo igyvendinti behavioral paterna
+
+    private void calculateObjectHeight() {
+        objectHeight = brickArea.getHeight() / Parameters.getInstance().getBrickRowCount();
+    }
+
+    private void calculateObjectWidth() {
+        objectWidth = brickArea.getWidth() / Parameters.getInstance().getBrickColumnCount();
+    }
+
+
     public void fillArea() {
         for (double coordY = brickArea.getUpperY(); coordY < brickArea.getLowerY() - 1; ) {
             for (double coordX = brickArea.getLeftX(); coordX < brickArea.getRightX() - 1; ) {

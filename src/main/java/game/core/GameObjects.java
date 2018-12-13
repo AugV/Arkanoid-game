@@ -1,6 +1,5 @@
 package game.core;
 
-import game.initializers.BrickArea;
 import game.initializers.BrickFactory;
 import game.objects.Ball;
 import game.objects.GameObject;
@@ -24,8 +23,7 @@ public class GameObjects {
     }
 
     public void initializeBrickList() {
-        BrickFactory brickFactory = new BrickFactory(new BrickArea(Parameters.getInstance().getSceneWidth(),
-                                                                Parameters.getInstance().getSceneHeight()));
+        BrickFactory brickFactory = new BrickFactory();
         brickFactory.fillArea();
         brickList = brickFactory.getBrickList();
     }

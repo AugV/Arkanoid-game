@@ -10,8 +10,8 @@ public class Parameters {
     private final double sceneWidth = 1024.0, sceneHeight = 768.0;
     private final double vausWidth = sceneWidth / 5.0, vausHeight = sceneHeight / 38.0;
     private final double vausPrimaryPositionX = ((sceneWidth - vausWidth) / 2.0), vausFixedPositionY = sceneHeight - vausHeight;
-    private final double brickAreasLowerBorderYcoord = 4.0;
-    private final double brickAreasUpperBorderYcoord = 10.0;
+    private final double brickAreasLowerBorderYcoordCoef = 4.0;
+    private final double brickAreasUpperBorderYcoordCoef = 10.0;
     private final double brickRowCount = 5.0;
     private final double brickColumnCount = 5.0;
     private final double ballSpeedHorizontal = 5.0;
@@ -65,12 +65,12 @@ public class Parameters {
         return vausFixedPositionY;
     }
 
-    public double getBrickAreasLowerBorderYcoord() {
-        return brickAreasLowerBorderYcoord;
+    public double getBrickAreasLowerBorderYcoordCoef() {
+        return brickAreasLowerBorderYcoordCoef;
     }
 
-    public double getBrickAreasUpperBorderYcoord() {
-        return brickAreasUpperBorderYcoord;
+    public double getBrickAreasUpperBorderYcoordCoef() {
+        return brickAreasUpperBorderYcoordCoef;
     }
 
     public double getBrickRowCount() {
