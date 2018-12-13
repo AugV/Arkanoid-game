@@ -1,7 +1,5 @@
 package game.initializers;
 
-import game.parameters.Parameters;
-
 public class BrickAreaDynamic implements BrickArea{
         private double lowerY, upperY, leftX, rightX, width, height;
 
