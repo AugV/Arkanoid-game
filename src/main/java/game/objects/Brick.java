@@ -14,7 +14,9 @@ public class Brick implements GameObject {
         return shape;
     }
 
-    public Bounds getBounds(){
+    @Override
+    public Bounds getBounds() {
         return shape.getLayoutBounds();
     }
+
 }

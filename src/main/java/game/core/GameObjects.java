@@ -1,21 +1,20 @@
 package game.core;
 
-import game.initializers.BrickArea;
-import game.initializers.BrickGenerator;
+import game.initializers.BrickFactory;
 import game.objects.Ball;
-import game.objects.Brick;
+import game.objects.GameObject;
 import game.objects.TheVaus;
-import javafx.scene.shape.Rectangle;
+import game.parameters.Parameters;
+import javafx.scene.shape.Shape;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import static game.parameters.Parameters.*;
 
 public class GameObjects {
     private TheVaus theVaus;
     private Ball ball;
-    private List<Brick> brickList;
+    private List<GameObject> brickList;
 
     public GameObjects() {
         initializeBrickList();
@@ -24,13 +23,16 @@ public class GameObjects {
     }
 
     public void initializeBrickList() {
-        BrickGenerator brickGenerator = new BrickGenerator(new BrickArea(sceneWidth, sceneHeight));
-        brickGenerator.fillArea();
-        brickList = brickGenerator.getBrickList();
+        BrickFactory brickFactory = new BrickFactory();
+        brickFactory.fillArea();
+        brickList = brickFactory.getBrickList();
     }
 
     public void initializeTheVaus() {
-        theVaus = new TheVaus(vausWidth, vausHeight, vausPrimaryPositionX, vausFixedPositionY);
+        theVaus = new TheVaus(Parameters.getInstance().getVausWidth(),
+                Parameters.getInstance().getVausHeight(),
+                Parameters.getInstance().getVausPrimaryPositionX(),
+                Parameters.getInstance().getVausFixedPositionY());
     }
 
     public TheVaus getTheVaus() {
@@ -41,14 +43,14 @@ public class GameObjects {
         return ball;
     }
 
-    public List<Brick> getBrickList() {
+    public List<GameObject> getBrickList() {
         return brickList;
     }
 
     public List getBrickShapeList() {
-        List<Rectangle> shapeList = new ArrayList();
-        for(Brick brick: brickList){
-            shapeList.add(brick.getShape());
+        List<Shape> shapeList = new ArrayList();
+        for(GameObject obj: brickList){
+            shapeList.add(obj.getShape());
         }
         return shapeList;
     }

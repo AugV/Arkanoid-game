@@ -1,5 +1,7 @@
 package game.core;
 
+import game.objects.GameObject;
+import game.objects.TheVaus;
 import game.rules.GameRules;
 import game.user.UserInteraction;
 
@@ -8,6 +10,7 @@ public class GameEngine {
     private GameLayout gameLayout;
     private GameRules gameRules;
     private UserInteraction<game.objects.TheVaus> userInteraction;
+
 
     public GameEngine(GameObjects gameObjects, GameLayout gameLayout) {
         this.gameObjects = gameObjects;

@@ -3,19 +3,20 @@ package game.rules;
 import game.layout.GameRoot;
 import game.objects.Ball;
 import game.objects.Brick;
+import game.objects.GameObject;
 import game.objects.TheVaus;
+import game.parameters.Parameters;
 import javafx.animation.AnimationTimer;
 
 import java.util.List;
-
-import static game.parameters.Parameters.*;
 
 public class GameRules {
     private Ball ball;
     private TheVaus vaus;
     private List<Brick> brickList;
     private GameRoot root;
-    private double ballSpeedX = ballSpeedHorizontal, ballSpeedY = ballSpeedVertical;
+    private double ballSpeedX = Parameters.getInstance().getBallSpeedHorizontal(),
+                    ballSpeedY = Parameters.getInstance().getBallSpeedVertical();
 
     public GameRules(Ball ball, TheVaus vaus, List brickList, GameRoot gameRoot) {
         this.ball = ball;
@@ -52,7 +53,7 @@ public class GameRules {
 
     public boolean contactedFloor() {
         return ball.getCenterY() + ball.getRadius()
-                > sceneHeight;
+                > Parameters.getInstance().getSceneHeight();
     }
 
     private void gameOver() {
@@ -62,7 +63,7 @@ public class GameRules {
 
     public boolean hitWallX() {
         return ball.getCenterX() - ball.getRadius() < 0
-                || ball.getCenterX() + ball.getRadius() > sceneWidth;
+                || ball.getCenterX() + ball.getRadius() > Parameters.getInstance().getSceneWidth();
     }
 
     public boolean hitWallY() {
@@ -74,14 +75,14 @@ public class GameRules {
     }
 
     public boolean contactedVaus() {
-        return ball.intersects(vaus.getBounds());
+        return ball.intersects((vaus.getShape().getLayoutBounds()));
     }
 
     public boolean contactedBrick() {
-        for (Brick brick : brickList) {
-            if (ball.intersects(brick.getBounds())) {
-                brickList.remove(brick);
-                root.removeFromRoot(brick);
+        for (GameObject obj : brickList) {
+            if (ball.intersects(obj.getBounds())) {
+                brickList.remove(obj);
+                root.removeFromRoot(obj);
                 return true;
             }
         }

@@ -1,17 +1,16 @@
 package game.objects;
 
+import game.parameters.Parameters;
 import javafx.geometry.Bounds;
 import javafx.scene.shape.Circle;
-
-import static game.parameters.Parameters.ballLocX;
-import static game.parameters.Parameters.ballLocY;
-import static game.parameters.Parameters.ballRadius;
 
 public class Ball implements GameObject{
     private Circle shape;
 
     public Ball() {
-        shape = new Circle(ballLocX, ballLocY, ballRadius);
+        shape = new Circle(Parameters.getInstance().getBallLocX(),
+                Parameters.getInstance().getBallLocY(),
+                Parameters.getInstance().getBallRadius());
     }
 
     public Circle getShape() {
@@ -37,5 +36,10 @@ public class Ball implements GameObject{
 
     public boolean intersects(Bounds bounds){
         return shape.intersects(bounds);
+    }
+
+    @Override
+    public Bounds getBounds() {
+        return shape.getLayoutBounds();
     }
 }

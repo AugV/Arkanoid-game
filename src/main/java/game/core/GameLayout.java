@@ -4,12 +4,9 @@ import game.layout.GameRoot;
 import game.layout.GameScene;
 import game.layout.GameStage;
 import game.main.Main;
+import game.parameters.Parameters;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
-
-import static game.parameters.Parameters.sceneHeight;
-import static game.parameters.Parameters.sceneWidth;
-import static game.parameters.Parameters.windowTitle;
 
 public class GameLayout {
     private GameStage gameStage;
@@ -39,12 +36,14 @@ public class GameLayout {
     }
 
     public void setScene() {
-        this.gameScene = new GameScene(root.getPane(), sceneWidth, sceneHeight);
+        this.gameScene = new GameScene(root.getPane(),
+                            Parameters.getInstance().getSceneWidth(),
+                            Parameters.getInstance().getSceneHeight());
     }
 
     public void setGameStage(Stage stage) {
         gameStage = new GameStage(stage);
-        gameStage.setTitle(windowTitle);
+        gameStage.setTitle(Parameters.getInstance().getWindowTitle());
         gameStage.setScene(gameScene.getScene());
         gameStage.show();
     }

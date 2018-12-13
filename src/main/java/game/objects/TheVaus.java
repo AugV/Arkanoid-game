@@ -28,7 +28,7 @@ public class TheVaus implements Movable, GameObject {
     public void moveLeft() {
         if (isAtLeftWall()) {
         } else {
-            shape.setX((shape.getX() - Parameters.vausSpeed));
+            shape.setX((shape.getX() - Parameters.getInstance().getVausSpeed()));
         }
     }
 
@@ -39,7 +39,7 @@ public class TheVaus implements Movable, GameObject {
     public void moveRight() {
         if (isAtRightWall()) {
         } else {
-            shape.setX((shape.getX() + Parameters.vausSpeed));
+            shape.setX((shape.getX() + Parameters.getInstance().getVausSpeed()));
         }
     }
 
